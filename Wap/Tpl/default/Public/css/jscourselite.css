@@ -1,0 +1,47 @@
+#jcarousellite_holder_wrapper{
+position: relative;
+width:271px;
+margin:0 auto;
+}
+
+#jcarousellite_holder{
+width:248px;
+margin:0px auto;
+overflow:hidden;
+
+}
+
+#jcarousellite_holder li{
+width:75px;
+padding:0 4px;
+min-height:75px;
+
+}
+
+
+
+.next{
+	background:url(../images/prodnext.png) no-repeat right top;
+	width:11px;
+	height:14px;	
+	top: 33px;
+	right: 0px;
+	cursor: pointer;
+	position: absolute;
+}
+
+
+.prev{
+
+	background:url(../images/prodprev.png) no-repeat left top;
+	width:11px;
+	height:14px;
+	position: absolute;
+	top: 33px;
+	left: 0px;
+	cursor: pointer;
+
+}
+
+
+

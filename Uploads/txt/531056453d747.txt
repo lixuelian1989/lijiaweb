@@ -1,0 +1,629 @@
+2013年 6月大学英语四级考试真题 （标准卷）
+Total score: 710        
+Total time allowed: 125 minutes 
+[特注： 2013年 6月大学四级考试采用多题多卷形式，本试卷含两套写作题，考生可以任选其一。 ]
+[w]
+{title} Part I Writing  (多题多卷写作题 1) (30 minutes) （20 score）
+{directions} Directions: For this part, you are allowed 30 minutes to write a short essay. You should start your essay with a brief description of the picture and then express your views on the importance of doing small things before undertaking something big. You should write at least 120 words but no more than 180 words. 
+{url} http://www.baidu.com/ 
+[/w]
+[w]
+{title} Part I Writing (多题多卷写作题 2) (30 minutes) （10 score）
+{directions} Directions: For this part, you are allowed 30 minutes to write a short essay. You should start your essay with a brief description of the picture and then express your views on the importance of reading literature. You should write at least 120 words but no more than 180 words. 
+{url} http://www.baidu.com/
+[/w]
+[P1]
+Part II Reading Comprehension (Skimming and Scanning) (15 minutes) (30 score)
+Directions: In this part, you will have 15 minutes to go over the passage quickly and answer the questions on Answer Sheet 1. For questions 1-7, choose the best answer from the four choices marked A), B), C) and D). For questions 8-10, complete the sentences with the information given in the passage. 
+[content]
+    <b>Can Digital Textbook Truly Replace the Print Kind?</b>
+　　The shortcomings of traditional print edition textbooks are obvious: For starters they’re heavy, with the average physics textbook weighing 3.6 pounds. They’re also expensive, especially when you factor in the average college student’s limited budget, typically costing hundreds of dollars every semester. 
+　　But the worst part is that print version of textbooks are constantly undergoing revisions. Many professors require that their students use only the latest versions in the classroom, essentially rendering older texts unusable. For students, it means they’re basically stuck with a four pound paper-weight that they can’t sell back. 
+　　Which is why digital textbooks, if they live up to their promise, could help ease many of these shortcomings. But till now, they’ve been something like a mirage（幻影）in the distance, more like a hazy（模糊的）dream than an actual reality. Imagine the promise: Carrying all your textbooks in a 1.3 pound iPad? It sounds almost too good to be true. 
+　　But there are a few pilot schools already making the transition（过渡）over to digital books. Universities like Cornell and Brown have jumped onboard. And one medical program at the University of California, Irvine, gave their entire class iPads with which to download textbooks just last year. 
+　　But not all were eager to jump aboard. 
+　　“People were tired of using the iPad textbook besides using it for reading,” says Kalpit Shah, who will be going into his second year at Irvine’s medical program this fall. “They weren’t using it as a source of communication because they couldn’t read or write in it. So a third of the people in my program were using the iPad in class to take notes, the other third were using laptops and the last third were using paper and pencil.” 
+　　The reason it hasn’t caught on yet, he tells me, is that the functionality of e-edition textbooks is incredibly limited, and some students just aren’t motivated to learn new study behavior. 
+　　But a new application called Inkling might change all that. The company just released an updated version last week, and it’ll be utilized in over 50 undergraduate and graduate classrooms this coming school year. 
+　　“Digital textbooks are not going to catch on,” says Inkling CEO Matt Maclnnis as he’s giving me a demo（演示）over coffee. “What I mean by that is the current perspective of the digital textbook is it’s an exact copy of the print book. There’s Course Smart, etc., these guys who take any image of the page and put it on a screen. If that’s how we’re defining digital textbooks, there’s no hope of that becoming a mainstream product.” 
+　　He calls Inkling a platform for publishers to build rich multimedia content from the ground up, with a heavy emphasis on real-world functionality. The traditional textbook merely serves as a skeleton. 
+　　At first glance Inkling is an impressive experience. After swiping（敲击）into the iPad app (应用软件 ), which you can get for free here, he opens up a few different types of textbooks. 
+　　Up first is a chemistry book. The boot time is pretty fast, and he navigates through (浏览 ) a few chapters before swiping into a fully rendered 3D molecule that can be spun around to view its various building blocks. “Publishers give us all of the source media, artwork, videos,” he says, “We help them think through how to actually build something for this platform.” 
+　　Next he pulls up a music composition textbook, complete with playable demos. It’s a learning experience that attacks you from multiple sensory directions. It’s clear why this would be something a music major would love. 
+　　But the most exciting part about Inkling, to me, is its notation（批注）system. Here’s how it works! 
+　　When you purchase a used print book, it comes with its previous owner’s highlights and notes in the margins. It uses the experience of someone who already went through the class to help improve your reading (how much you trust each notation is obviously up to you). 
+　　But with lnkling, you can highlight a piece of content and make notes. Here’s where things get interesting, though: If a particularly important passage is highlighted by multiple lnkling users, that information is stored on the cloud and is available for anyone reading the same textbook to come across. That means users have access to notes from not only their classmates and Facebook friends, but anyone who purchased the book across the country. The best comments are then sorted democratically by a voting system, meaning that your social learning experience is shared with the best and brightest thinkers. 
+　　As a bonus, professors can even chime in (插话 ) on discussions. They’ll be able to answer the questions of students who are in their class directly via the interactive book. 
+　　Of course, Inkling addresses several of the other shortcomings in traditional print as well. Textbook versions are constanly updated, motivating publishers by minimizing production costs (the big ones like McGraw-Hill are already onboard). Furthermore, students will be able to purchase sections of the text instead of buying the whole thing, with individual chapters costing as little as $2.99. 
+　　There are, however, challenges. 
+　　“It takes efforts to build each book,” Maclnnis tells me. And it’s clear why. 
+　　Each interactive textbook is a media-heavy experience built from the ground up, and you can tell that it takes a respectable amount of manpower to put together each one. 
+　　For now the app is also iPad-exclusive, and though a few of these educational institutions are giving the hardware away for free, for other students who don’t have such a luxury it’s an added layer of cost — and an expensive one at that. 
+　　But this much is clear. The traditional textbook model is and has been broken for quite some time. Whether digitally interactive ones like Inkling actually take off or not remains to be seen, and we probably won’t have a definite answer for the next few years. 
+　　However the solution to any problem begins with a step in a direction. And at least for now, that hazy mirage in the distance? A little more tangible (可触摸的 ), a little less of a dream. 
+[/content]
+[subject]
+1. The biggest problem with traditional print textbooks is that _____. 
+A) they are not reused once a new edition comes out 
+B) they cost hundreds of dollars every semester 
+C) they are too heavy to carry around 
+D) they take a longer time to revise 
+[/subject]
+[subject]
+2. What does the author say about digital textbooks? 
+A) It’s not likely they will replace traditional textbooks.   
+B) They haven’t fixed all the shortcomings of print books. 
+C) Very few of them are available in the market. 
+D) Many people still have difficulty using them. 
+[/subject]
+[subject]
+3. According to Kalpit Shah, some students still use paper and pencil because _____.      
+A) they find it troublesome to take notes with an iPad 
+B) they are unwilling to change their study behavior 
+C) they have get tired of reading on the iPad 
+D) they are not used to reading on the screen 
+[/subject]
+[subject]
+4. Inkling CEO Matt Maclnnis explains that the problem with Course Smart’s current digital textbooks is that _____.          
+A) they have to be revised repeatedly 
+B) they are inconvenient to use in class 
+C) they are different from most mainstream products 
+D) they are no more than print versions put on a screen 
+[/subject]
+[subject]
+5. Matt Maclnnis describes the updated version of lnkling as _____. 
+A) a good example of the mainstream products 
+B) a marvelous product of many creative ideas 
+C) a platform for building multimedia content 
+D) a mere skeleton of traditional textbooks 
+[/subject]
+
+[subject]
+6. The author is most excited about lnkling’s notation system because one can _____.             
+A) share his learning experience with the best and brightest thinkers 
+B) participate in discussions with classmates and Facebook friends 
+C) vote for the best learners democratically 
+D) store information on the cloud 
+[/subject]
+[subject]
+7. One additional advantage of the interactive digital textbook is that _____.  
+A) students can switch to different discussions at any point 
+B) students can download relevant critical comments 
+C) professors can join in students’ online discussions 
+D) professors can give prompt feedback to students’ homework 
+[/subject]
+[tra]
+8. One of the challenges to build an interactive digital textbook from the ground up is that is takes a great deal of _____.  
+[/tra]
+[tra]
+9. One problem for students to replace traditional textbooks with interactive digital ones is the high ______ of the hardware. 
+[/tra]
+[tra]
+10. According to the author, whether digital textbooks will catch on still _____.  
+[/tra]
+[/P1]
+
+[P2]
+Part III Listening Comprehension (35 minutes) (30 score)
+[section]
+ Section A 
+ Directions: In this section, you will hear 8 short conversations and 2 long conversations. At the end of each conversation, one or more questions will be asked about what was said. Both the conversation and the questions will be spoken only once. After each question there will be a pause. During the pause, you must read the four choices marked A), B), C) and D), and decide which is the best answer. Then mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[passage]
+ Questions 11 to 18 are based on the conversation you have just heard. 
+[options]
+11.
+A) Children should be taught to be more careful. 
+B) Children shouldn’t drink so much orange juice.  
+C) There is no need for the man to make such a fuss. 
+D) Timmy should learn to do things in the right way. 
+[/options]
+[options]
+12. 
+A) Fitness training.                  
+B) The new job offer.  
+C) Computer programming.           
+D) Directorship of the club. 
+[/options]
+[options]
+13. 
+A) He needs to buy a new sweater.      
+B) He has got to save on fuel bills.  
+C) The fuel price has skyrocketed.      
+D) The heating system doesn’t work.  
+[/options]
+[options]
+14. 
+A) Committing theft.                 
+B) Taking pictures.   
+C) Window shopping.                
+D) Posing for the camera.  
+[/options]
+[options]
+15. 
+A) She is taking some medicine.        
+B) She has not seen a doctor yet.  
+C) She does not trust the man’s advice.  
+D) She has almost recovered from the cough.  
+[/options]
+[options]
+16. 
+    A) Pamela’s report is not finished as scheduled.  
+　　B) Pamela has a habit of doing things in a hurry.  
+　　C) Pamela is not good at writing research papers.  
+　　D) Pamela’s mistakes could have been avoided.  
+[/options]
+[options]
+17. 
+A) In the left-luggage office.          
+B) At the hotel reception.  
+C) In a hotel room.                  
+D) At an airport.  
+[/options]
+[options]
+18. 
+A) She was an excellent student at college.    
+B) She works in the entertainment business.  
+C) She is fond of telling stories in her speech.  
+D) She is good at conveying her message. 
+[/options]
+[/passage]
+[passage]
+Questions 19 to 21 are based on the conversation you have just heard. 
+[options]
+19. 
+    A) Arranging the woman’s appointment with Mr. Romero. 
+　　B) Fixing the time for the designer’s latest fashion show. 
+　　C) Talking about an important gathering on Tuesday. 
+　　D) Preparing for the filming on Monday morning. 
+[/options]
+[options]
+20. 
+    A) Her travel to Japan. 
+　　B) The awards ceremony. 
+　　C) The proper hairstyle for her new role. 
+　　D) When to start the makeup session. 
+[/options]
+[options]
+21. 
+    A) He is Mr. Romero’s agent. 
+　　B) He is an entertainment journalist. 
+　　C) He is the woman’s assistant. 
+　　D) He is a famous movie star. 
+[/options]
+[/passage]
+[passage]
+ Questions 22 to 25 are based on the conversation you have just heard. 
+[options]
+22. 
+    A) Make an appointment for an interview. 
+　　B) Send in an application letter. 
+　　C) Fill in an application form. 
+　　D) Make a brief self-introduction on the phone. 
+[/options]
+[options]
+23. 
+    A) Someone having a college degree in advertising. 
+　　B) Someone experienced in business management. 
+　　C) Someone ready to take on more responsibilities. 
+　　D) Someone willing to work beyond regular hours. 
+[/options]
+[options]
+24. 
+    A) Travel opportunities. 
+　　B) Handsome pay. 
+　　C) Prospects for promotion. 
+　　D) Flexible working hours. 
+[/options]
+[options]
+25. 
+    A) It depends on the working hours. 
+　　B) It’s about 500 pound a week. 
+　　C) It will be set by the Human Resources. 
+　　D) It is to be negotiated. 
+[/options]
+[/passage]
+[/section] 
+[section] 
+Section B 
+Directions: In this section you will hear 3 short passages. At the end of each passage, you will hear some questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[passage]
+Passage One 
+Questions 26 to 29 are based on the passage you have just heard. 
+[options]
+26. 
+    A) To give customers a wider range of choices. 
+　　B) To make shoppers see as many items as possible. 
+　　C) To supply as many varieties of goods as it can. 
+　　D) To give space for more profitable products.  
+[/options]
+[options]
+27. 
+    A) On the top shelves.  
+　　B) On the bottom shelves.  
+　　C) On easily accessible shelves.  
+　　D) On clearly marked shelves.  
+[/options]
+[options]
+28. 
+    A) Many of them buy things on impulse.  
+　　B) A few of them are fathers with babies.  
+　　C) A majority of them are young couples.  
+　　D) Over 60% of them make shopping lists.  
+[/options]
+[options]
+29. 
+    A) Sales assistants promoting high margin goods. 
+　　B) Sales assistants following customers around. 
+　　C) Customers competing for good bargains. 
+　　D) Customers losing all sense of time. 
+[/options]
+[/passage]
+[passage]
+Passage Two 
+Questions 30 to 32 are based on the passage you have just heard. 
+[options]
+30. 
+    A) Teaching mathematics at a school. 
+　　B) Doing research in an institute. 
+　　C) Studying for a college degree. 
+　　D) Working in a high-tech company. 
+[/options]
+[options]
+31. 
+    A) He studied the designs of various choices. 
+　　B) He did experiments to different materials. 
+　　C) He bought an alarm clock with a pig face. 
+　　D) He asked different people for their opinions. 
+[/options]
+[options]
+32. 
+    A) Its automatic mechanism. 
+　　B) Its manufacturing pattern. 
+　　C) Its way of waking people up. 
+　　D) Its funny-looking pig face. 
+[/options]
+[/passage]
+[passage]
+Questions 33 to 35 are based on the passage you have just heard. 
+[options]
+33. 
+    A) It’s often caused by a change of circumstances. 
+　　B) It usually doesn’t require any special attention. 
+　　C) It usually appears all of a sudden. 
+　　D) It usually lasts for several years. 
+[/options]
+[options]
+34. 
+    A) They can’t mix well with others. 
+　　B) They emotionally receive their friends. 
+　　C) They depend severely on family members. 
+　　D) They share similar interests with friends. 
+[/options]
+[options]
+35. 
+    A) They lack consistent support from peers. 
+　　B) They doubt their own popularity. 
+　　C) They were born psychologically weak. 
+　　D) They focus too much attention on themselves. 
+[/options]
+[/passage]
+[/section] 
+
+[section] 
+Section C 
+Directions: In this section, you will hear a passage three times. When the passage is read for the first time, you should listen carefully for its general idea. When the passage is read for the second time, you are required to fill in the blanks numbered from 36 to 43 with the exact words you have just heard. For blanks numbered from 44 to 46 you are required to fill in the missing information. For these blanks you can either use the exact words you have just heard or write down the main points in your own words. Finally when the passage is read for the third time, you should check what you have written. 
+[content]　
+There was a time when any personal information that was gathered about us was typed on a piece of paper and (36) ________ away in a file cabinet. It could remain there for years and, often (37) ________, never reach the outside world. 
+　　Things have done a complete about-face since then. (38) ________ for the change has been the astonishingly (39) ________ development in recent years of the computer. Today, any data that is 
+　　(40) ________ about us in one place or another — and for one reason or another — can be stored in a computer bank. It can then be easily passed to other computer banks. They are owned by (41) ________ and by private businesses and corporations, lending (42) ________, direct mailing and telemarketing firms, credit bureaus, credit card companies, and government (43) ________ at the local, state, and federal level. 
+　　A growing number of Americans are seeing the accumulation and distribution of computerized date as a frightening invasion of their privacy. (44) ___________ _________________________________________________________ as the computer becomes increasingly efficient, easier to operate, and less costly to purchase and maintain. In 1970, a national survey showed that (45) ___________________________________________________ _________________. Seven years later, 47 percent expressed the same worry. (46) ____________ ________________________________________________________. 
+[/content]
+[/section] 
+[/P2]
+[P3]
+Part IV   Reading Comprehension (Reading in Depth) (25 minutes) (30 score)
+[section]
+Section A 
+Directions: In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage. Read the passage through carefully before making your choices. Each choice in the bank is identified by a letter. Please mark the corresponding letter for each item on Answer Sheet 2 with a single line through the centre. You may not use any of the words in the bank more than once. 
+[passage]
+Questions 47 to 56 are based on the following passage.
+[content]
+　　Walking, if you do it vigorously enough, is the overall best exercise for regular physical activity. It requires no equipment, everyone knows how to do it and it carries the   47   risk of injury. The human body is designed to walk. You can walk in parks or along a river or in your neighborhood. To get   48   benefit from walking, aim for 45 minutes a day, an average of five days a week. 
+　　Strength training is another important   49   of physical activity. Its purpose is to build and 50   bone and muscle mass, both of which shrink with age. In general, you will want to do strength training two or three days a week,   51   recovery days between sessions. 
+　　Finally, flexibility and balance training are   52   important as the body ages. Aches and pains are high on the list of complaints in old age. The result of constant muscle tension and stiffness of joints, many of them are   53  , and simple flexibility training can   54   these by making muscles stronger and keeping joints lubricated (润滑 ). Some of this you do whenever you stretch. If you watch dogs and cats, you’ll get an idea of how natural it is. The general   55   is simple: whenever the body has been in one position for a while, it is good to   56   stretch it in an opposite position. 
+[/content]	
+[options]
+A) allowing                                          
+B) avoidable                                      
+C) briefly                                             
+D) component                                        
+E) determined                                       
+F) helping
+G) increasingly
+H) lowest
+I) maintain
+J) maximum
+K) prevent
+L) principle
+M) provoke
+N) seriously 
+O) topic
+[/options]
+[/passage]
+[/section]
+[section]
+Section B 
+Directions: There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A), B), C) and D). You should decide on the best choice and mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[passage]
+Passage One 
+Questions 57 to 61 are based on the following passage. 
+[content]
+　　Junk food is everywhere. We’re eating way too much of it. Most of us know what we’re doing and yet we do it anyway. 
+　　So here’s a suggestion offered by two researchers at the Rand Corporation: Why not take a lesson from alcohol control policies and apply them to where food is sold and how it’s displayed? 
+　　“Many policy measures to control obesity（肥胖症）assume that people consciously and rationally choose what and how much they eat and therefore focus on providing information and more access to healthier foods,” note the two researchers. 
+　　“In contrast,” the researchers continue, “many regulations that don’t assume people make rational choices have been successfully applied to control alcohol, a substance — like food — of which immoderate consumption leads to serious health problems.” 
+　　The research references studies of people’s behavior with food and alcohol and results of alcohol restrictions, and then lists five regulations that the researchers think might be promising if applied to junk foods. Among them: 
+　　Density restrictions: licenses to sell alcohol aren’t handed out unplanned to all comers but are allotted（分配）based on the number of places in an area that already sell alcohol. These make alcohol less easy to get and reduce the number of psychological cues to drink. 
+　　Similarly, the researchers say, being presented with junk food stimulates our desire to eat it. So why not limit the density of food outlets, particularly ones that sell food rich in empty calories? And why not limit sale of food in places that aren’t primarily food stores? 
+　　Display and sales restrictions: California has a rule prohibiting alcohol displays near the cash registers in gas stations, and in most places you can’t buy alcohol at drive-through facilities. At supermarkets, food companies pay to have their wares in places where they’re easily seen. One could remove junk food to the back of the store and ban them from the shelves at checkout lines. The other measures include restricting portion sizes, taxing and prohibiting special price deals for junk foods, and placing warning labels on the products. 
+[/content]
+[subject]
+57. What does the author say about junk food? 
+　　A) People should be educated not to eat too much. 
+　　B) It is widely consumed despite its ill reputation. 
+　　C) Its temptation is too strong for people to resist. 
+　　D) It causes more harm than is generally realized. 
+[/subject]
+[subject]
+58. What do the Rand researchers think of many of the policy measures to control obesity? 
+　　A) They should be implemented effectively. 
+　　B) They provide misleading information. 
+　　C) They are based on wrong assumptions. 
+　　D) They help people make rational choices. 
+[/subject]
+[subject]
+59. Why do policymakers of alcohol control place density restrictions? 
+　　A) Few people are able to resist alcohol’s temptations. 
+　　B) There are already too many stores selling alcohol. 
+　　C) Drinking strong alcohol can cause social problems. 
+　　D) Easy access leads to customers’ over-consumption. 
+[/subject]
+[subject]
+60. What is the purpose of California’s rule about alcohol display in gas stations? 
+　　A) To effectively limit the density of alcohol outlets. 
+　　B) To help drivers to give up the habit of drinking. 
+　　C) To prevent possible traffic jams in nearby areas. 
+　　D) To get alcohol out of drivers’ immediate sight. 
+[/subject]
+[subject]
+61. What is the general guideline the Rand researchers suggest about junk food control? 
+　　A) Guiding people to make rational choices about food. 
+　　B) Enhancing people’s awareness of their own health. 
+　　C) Borrowing ideas from alcohol control measures. 
+　　D) Resorting to economic, legal and psychological means. 
+[/subject]
+[/passage]
+
+[passage]
+Passage Two 
+Questions 62 to 66 are based on the following passage. 
+[content]
+　　Kodak’s decision to file for bankruptcy（破产）protection is a sad, though not unexpected, turning point for a leading American corporation that pioneered consumer photography and dominated the film market for decades, but ultimately failed to adapt to the digital revolution. 
+　　Although many attribute Kodak’s downfall to “complacency(自满) ,” that explanation doesn’t acknow-ledge the lengths to which the company went to reinvent itself. Decades ago, Kodak anticipated that digital photography would overtake film — and in fact, Kodak invented the first digital camera in 1975 — but in a fateful decision, the company chose to shelf its new discovery to focus on its traditional film business. 
+　　It wasn’t that Kodak was blind to the future, said Rebecca Henderson, a professor at Harvard Business School, but rather that it failed to execute on a strategy to confront it. By the time the company realized its mistake, it was too late. 
+　　Kodak is an example of a firm that was very much aware that they had to adapt, and spent a lot of money trying to do so, but ultimately failed. Large companies have a difficult time switching into new markets because there is a temptation to put existing assets into the new businesses. 
+　　Although Kodak anticipated the inevitable rise of digital photography, its corporate（企业的） culture was too rooted in the successes of the past for it to make the clean break necessary to fully embrace the future. They were a company stuck in time. Their history was so important to them. Now their history has become a liability. 
+　　Kodak’s downfall over the last several decades was dramatic. In 1976, the company commanded 90% of the market for photographic film and 85% of the market for cameras. But the 1980s brought new competition from Japanese film company Fuji Photo, which undermined Kodak by offering lower prices for film and photo supplies. Kodak’s decision not to pursue the role of official film for the 1984 Los Angeles Olympics was a major miscalculation. The bid went instead to Fuji, which exploited its sponsorship to win a permanent foothold in the marketplace. 
+[/content]
+[subject]　　
+62. What do we learn about Kodak? 
+　　A) It went bankrupt all of a sudden. 
+　　B) It is approaching its downfall. 
+　　C) It initiated the digital revolution in the film industry. 
+　　D) It is playing a dominant role in the film market. 
+[/subject]
+[subject]
+63. Why does the author mention Kodak’s invention of the first digital camera? 
+　　A) To show its early attempt to reinvent itself. 
+　　B) To show its effort to overcome complacency. 
+　　C) To show its quick adaptation to the digital revolution. 
+　　D) To show its will to compete with Japan’s Fuji photo. 
+[/subject]
+[subject]
+64. Why do large companies have difficulty switching to new markets? 
+　　A) They find it costly to give up their existing assets. 
+　　B) They tend to be slow in confronting new challenges. 
+　　C) They are unwilling to invest in new technology. 
+　　D) They are deeply stuck in their glorious past. 
+[/subject]
+[subject]
+65. What does the author say Kodak’s history has become? 
+　　A) A burden.  
+　　B) A mirror.  
+　　C) A joke.  
+　　D) A challenge.  
+[/subject]
+[subject]
+66. What was Kodak’s fatal mistake?  
+　　A) Its blind faith in traditional photography.  
+　　B) Its failure to see Fuji photo’s emergence.  
+　　C) Its refusal to sponsor the 1984 Olympics.  
+D) Its overconfidence in its corporate culture.  
+[/subject]
+[/passage]
+[/section]
+[/P3]
+[P4]
+Part V Cloze (15 minutes) (30 score)
+Directions: There are 20 blanks in the following passage. For each blank there are four choices marked A), B), C) and D). You should choose the ONE that best fits into the passage. Then mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[content]
+　　Whether you think you need daytime rest or not, picking up a nap（午睡）habit is a smart, healthy move. The Mayo Clinic says naps   67   relaxation, better mood and alertness, and a sharper working 68  . A 2008 British study found that compared to getting more nighttime sleep, a mid-day nap was the best way to cope   69   the mid-afternoon sleepiness. 
+　　According to the Harvard Health Letter, several studies have shown that people   70   new information better when they take a nap shortly after learning it. And, most   71  , a 2007 study of nearly 24,000 Greek adults in the Archives of Internal Medicine found that people who napped   72   had a 37 percent reduced risk of dying   73   heart disease compared to people who didn’t nap.  
+　　Of course, napping isn’t   74   for everyone. If you’re suffering from inability to sleep, naps that are too long or taken too late in the day can   75   with your ability to fall or stay asleep at night. 
+　　But for most, naps can make you feel sharper and happier. Naps provide different benefits 76 on how long they are. A 20-minute nap will boost alertness and concentration; a 90-minute snooze（小睡）can   77   creativity. 
+　　According to prevention.com, you   78   a natural dip in body temperature   79   1 p.m. and 3 p.m. A short nap at this time can boost alertness   80   several hours and, for most people, shouldn’t   81   being able to fall asleep at night.  
+　　Pick a dark, cozy place that’s not too warm or too chilly. prevention.com   82   snapping on the couch instead of in bed, so you’re less   83   to snooze for too long. 
+　　Surprisingly, the best place to take a nap may be a hammock（吊床）if you have one. A Swiss study   84   last year found that people fell asleep faster and had deeper sleep when they napped in a hammock than in a bed. That same rocking   85   that puts babies to sleep works 86   for grown-ups, too. 
+[/content]
+[option]
+67. 
+A) enforce		
+B) promote		
+C) operate		
+D) support		
+[/option]
+[option]
+68. 
+A) feeling		
+B) frame			
+C) sense			
+D) mind  
+[/option]
+[option]
+69. 
+A) with		
+B) aside			
+C) about			
+D) upon  
+[/option]
+[option]
+70. 
+A) remark     
+B) consider		
+C) remember		
+D) concern
+[/option]
+[option]
+71. 
+A) reportedly	
+B) incredibly 	
+C) constantly
+D) frankly  
+[/option]
+[option]
+72. 
+A) regularly	
+B) enormously		
+C) heavily		
+D) strongly  
+[/option]
+[option]
+73. 
+A) off			
+B) under			
+C) against		
+D) from  
+[/option]
+[option]
+74. 
+A) exact		
+B) correct		
+C) right			
+D) precise
+[/option]
+[option]
+75. 
+A) influence	
+B) eliminate    	
+C) compete		
+D) interfere
+[/option]
+[option]
+76.
+ A) focusing 
+	B) depending
+		C) relying 		
+D) basing
+[/option]
+[option]
+77. 
+A) enlarge		
+B) engage		
+C) enhance		
+D) enlighten
+[/option]
+[option]
+78. 
+A) explore		
+B) experience		
+C) exercise		
+D) execute
+[/option]
+[option]
+79. 
+A) between	
+B) amidst			
+C) among			
+D) besides
+[/option]
+[option]
+80. 
+A) of			
+B) beyond		
+C) during			
+D) for
+[/option]
+[option]
+81. 
+A) produce		
+B) dispose		
+C) affect			
+D) hasten
+[/option]
+[option]
+82. 
+A) illustrates	
+B) decides		
+C) predicts		
+D) recommends
+[/option]
+[option]
+83. 
+A) inclined		
+B) involved		
+C) adopted		
+D) attracted
+[/option]
+[option]
+84. 
+A) pronounced	
+B) published		
+C) discovered		
+D) cultivated
+[/option]
+[option]
+85. 
+A) mood		
+B) model			
+C) motion		
+D) motive
+[/option]
+[option]
+86. 
+A) wonders	
+B) passions		
+C) mystery		
+D) pleasure 
+[/option]
+
+[/P4]
+
+
+
+[P5]
+Part VI  Translation (5 minutes) (30 score)
+Directions: Complete the sentences by translating into English the Chinese given in brackets. Please write you translation on Answer Sheet 2. 
+
+[only]87. Although only in her teens, my sister is looking forward to _________________（独自去海外学习 ). 
+
+
+[only]88. It’s true that we are not always going to succeed in our ventures, _______________（即使我们投入时间和金钱 ). 
+
+
+[only]89. The old couple hoped that their son ________________（将不辜负他们的期望 ). 
+
+[only]90. So badly _________________(他在车祸中受伤 )that he had to stay in the hospital for a whole year. 
+
+[only]91. Nowadays, some people still have trouble ________________（从网上获取信息 ). 
+
+[/P5]

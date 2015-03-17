@@ -1,0 +1,103 @@
+<div class="han_left l">
+  <div class="tjsx">条件筛选</div>
+  <script>
+							$(document).ready(function(){
+							$(".title22").click(function(){
+							var o=$(this);
+							o.parent().find(".content44").slideUp(200);
+							o.next().slideDown(300);
+							//$(".content").eq(index).slideDown(300);
+							});
+							});
+							</script>
+  <h3   class="title22">颁布国家</h3>
+  <div class="content44" style="display:none">
+    <table width="">
+      <volist id="vo" name="lc_list">
+      
+      <tr>
+        <td><input type="checkbox" name="lc_id[]" value="{$vo.lc_id}" /></td>
+        <td>
+        <img src="{$vo.lc_img}" width="42" height="42" />
+        </td>
+        <td>{$vo.lc_name|msubstr=0,18,'utf-8',false}</td>
+      </tr>
+      </volist>
+    </table>
+  </div>
+  <h3  class="title22">法规类型</h3>
+  <div class="content44" style="display:none">
+    
+    {$fglx_str}
+    
+  </div>
+  <h3  class="title22">车       型</h3>
+  <div class="content44" style="display:none">
+    {$lm_str}
+  </div>
+  <h3  class="title22">法规状态</h3>
+  <div class="content44" style="display:none">
+    <table>
+      <tr>
+        <td style="text-align:right"><input type="checkbox" name="lt_status[]" value="1" /></td>
+        <td style="text-align:left">生效</td>
+        <td style="text-align:right"><input type="checkbox" name="lt_status[]" value="2" /></td>
+        <td style="text-align:left">草案</td>
+      </tr>
+    </table>
+  </div>
+  <h3  class="title22">生效日期</h3>
+  <div class="content44" style="display:none">
+    <table>
+      <tr>
+        <td >从
+          <select>
+            <option>2014年</option>
+            <option>2013年</option>
+            <option>2012年</option>
+          </select>
+          <select>
+            <option>7月</option>
+            <option>7月</option>
+            <option>7月</option>
+          </select>
+          <select>
+            <option>7日</option>
+            <option>7日</option>
+            <option>7日</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td >到
+          <select>
+            <option>2014年</option>
+            <option>2013年</option>
+            <option>2012年</option>
+          </select>
+          <select>
+            <option>7月</option>
+            <option>7月</option>
+            <option>7月</option>
+          </select>
+          <select>
+            <option>7日</option>
+            <option>7日</option>
+            <option>7日</option>
+          </select></td>
+      </tr>
+    </table>
+  </div>
+  <div class="tjsx">收藏夹</div>
+  <div class="scj">
+    <li>喜欢的网站或网址</li>
+    <li>图书分类</li>
+  </div>
+  <div class="tjsx">收藏夹</div>
+  <div class="scj">
+    <li>2007 / 46 / EC指令号</li>
+    <li> 法规（EC）661号/ 2009 </li>
+    <li>法规（EC）715号/ 2007 </li>
+    <li>71 / 320 / EEC指令号</li>
+    <li> 法规（EC）595号</li>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员注册_{$site.SITE_INFO.name}</title>
+<link rel="stylesheet" href="__PUBLIC__/web/css/main.css" type="text/css" media=" screen"/>
+<script src="__PUBLIC__/web/js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+<div class="logo">
+  <h3><a href="{:U('Index/index')}"><img src="__PUBLIC__/web/images/index_07.png" /></a></h3>
+  <P>欢迎注册</P>
+</div>
+<div class="dl">
+  <div class="dl_c">
+  <form method="post" id="form1" name="form1" action="" enctype="multipart/form-data">
+    	<p class="p3"><span class="span1">账户名 ：</span>
+        <input class="t1" name="username" id="username" type="text" placeholder="用户名/邮箱/手机号码"  value=""/></p>
+        <p class="p3 "><span class="span1">设置密码 ：</span>
+        <input class="pp1 no" name="pwd" id="pwd" type="password" /><br /><span class="span2">6~20位字符，由数字、字母和符号中的至少两种组成</span></p>
+        <p class="p3"><span class="span1">确认密码 ：</span>
+        <input class="pp1" name="conf_pwd" id="conf_pwd" type="password" /></p>
+        <p class="p3"><span class="span1"></span><input name="sub" id="sub" class="s1" type="submit"  value="立即注册"/></p>
+        
+    	<p class="p4"><a href="{:U('Member/login')}">已有账号，立即登录</a></p>
+ </form>
+    </div>
+	<img class="img2" src="__PUBLIC__/web/images/zc_03.png" />
+    
+</div>
+<script>
+$("#form1").submit(function(){
+	var username=$("#username").val();
+	var pwd=$("#pwd").val();
+	var conf_pwd=$("#conf_pwd").val();
+	username=$.trim(username);
+	pwd=$.trim(pwd);
+	conf_pwd=$.trim(conf_pwd);
+	if(username==""){
+		alert("账户名不能为空!");
+		return false;
+	}
+	if(pwd==""){
+		alert("密码不能为空!");
+		return false;
+	}
+	if(conf_pwd==""){
+		alert("确认密码不能为空！");
+		return false;
+	}
+	if(pwd!=conf_pwd){
+		alert("两次输入的密码不一致！");
+		return false;
+	}
+	if(pwd.length<6||pwd.length>20){
+		alert("密码只能是6到20位的字母或数字或特殊符号组成");
+		return false;
+	}
+	
+	
+});
+</script>
+
+</body>
+</html>

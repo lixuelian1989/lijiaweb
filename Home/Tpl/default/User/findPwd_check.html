@@ -1,0 +1,165 @@
+<include file="Common:minheader" />
+
+  <div class="main_box">
+     <div class="zhaohui">
+
+      <h2 class="tit">找回密码</h2>
+      <div>
+      	<ul class="step">
+       	  <li class="mohter">填写账户名</li>
+        	<li class=" cur"> 验证身份</li>
+        	<li> 设置新密码</li>
+        	<li class="four"> 完成 </li>
+        </ul>
+        <div class="xxbox">
+        	<div class="loginbox2">
+                <form>
+                	<table>
+                    	<tr>
+                        	<td align="right">选择验份方式：：</td>
+                            <td>
+                            	<select  class="select" id="type" name="type" onchange="selectVerifyType();">
+                                    <option value="mobile">手机验证</option>									
+				    <option value="email">邮箱</option>	
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                       
+                        <tr class="emailDiv" style="display: none">
+                        	<td align="right">昵称：</td>
+                            <td class="dqxx">{$name}</td> 
+                        </tr>
+                        
+                         <tr class="emailDiv" style="display: none">
+                        	<td align="right">邮箱地址：</td>
+                            <td class="dqxx">{$email}</td> 
+                        </tr>
+                       
+                        <!--手机验证信息--->
+                       
+                         <tr class="mobileDiv">
+                        	<td align="right">昵称：</td>
+                            <td class="dqxx">{$name}</td> 
+                        </tr>
+                        
+                         <tr class="mobileDiv">
+                        	<td align="right">已验证手机：</td>
+                            <td class="dqxx">{$phone}<a href="#">获取短信验证码</a></td> 
+                        </tr>
+                        <tr class="mobileDiv">
+                        	<td align="right">短信验证码：</td>
+                            <td class="yzm"><input type="text" /></td> 
+                        </tr>
+                       
+                         <!--end 手机验证信息--->
+                         <tr>
+                         	<td></td>
+                        	<td class="dlan"><input type="button" value="发送验证邮箱" class="btn findPwd" /></td>
+                        </tr>
+                    </table>
+                      <input type="hidden" name="mid" id="mid" value="{$mid}"/>
+    </form>
+        </div>
+        </div>
+      </div>
+      <div class="cl"></div>
+      </div>
+      
+    </div>
+
+<!--
+
+    <div class="loginBox">
+        <div class="innerBox">
+            <div class="logo"> <img src="../Public/Img/logo.png" /></div>
+            <form id="form1" action="{:U('User/findPwd_check')}" method="post">
+                <h1  style="text-align: center;margin-top: 30px; margin-bottom: 20px;color: #214FA3">用户登录</h1>
+                <div class="loginInfo">
+                    <ul>
+                        <li class="row1">请选择验证身份方式：</li>
+                        <li class="row2">
+                            <select class="select" id="type" name="type" onchange="selectVerifyType();">
+				<option value="mobile">已验证手机</option>									
+				<option value="email">邮箱</option>				
+		           </select>
+                            
+                        </li>
+                    </ul>
+               </div>   
+               <div id="mobileDiv">
+                    <ul>
+                        <li class="row1">昵称：</li>
+                        <li class="row2">{$name}</li>
+                    </ul>
+                  <ul>
+                        <li class="row1">手机号码：</li>
+                        <li class="row2">{$phone} <button class="findPwd">获取短信验证码</button> </li>
+                  </ul>
+                   
+                   <ul>
+                        <li class="row1">短信验证码：</li>
+                        <li class="row2">
+                          <input class="input" name="duanxin" id="duanxin" style="width: 200px;"  type="text"/>
+                        </li>
+                   </ul>
+                   <ul>
+                       <li><div class="operation"><button class="btn findPwd">下一步</button> </li>
+                   </ul>
+                </div>
+                           
+                  <div id="emailDiv" style="display: none">
+                    <ul>
+                        <li class="row1">昵称：</li>
+                        <li class="row2">{$name}</li>
+                    </ul>
+                    <ul>
+                          <li class="row1">邮箱地址：</li>
+                          <li class="row2">{$email}  </li>
+                    </ul>
+                    <ul>
+                        <li><div class="operation"><button class="btn findPwd">发送验证邮件</button> </li>
+                    </ul>
+                    
+                </div>         
+                           
+                           
+                           
+                <input type="hidden" name="mid" id="mid" value="{$mid}"/>
+            </form>
+            <div class="clear"></div>
+              
+        </div>
+    </div>-->
+
+
+
+<include file="Common:minfooter" />
+    <script type="text/javascript">
+        $(function(){
+            $(".findPwd").click(function(){
+//                $("#op_type").val("2");
+//                if($("#email").val()==''){
+//                    popup.alert("填写了你的邮箱/用户名/手机方可找回密码");
+//                    return false;
+//                }
+//                if($("#verify_code").val()==''){
+//                    popup.alert("请写验证码方可找回密码");
+//                    return false;
+//                }
+                commonAjaxSubmit();
+            });
+        });
+     function selectVerifyType(){
+	var type = $("#type").val();
+	if(type == "mobile"){
+		$(".mobileDiv").show();
+		$(".emailDiv").hide();
+	}else if(type == "email"){
+		$(".mobileDiv").hide();
+		$(".emailDiv").show();
+	}
+     }   
+        
+        
+    </script>

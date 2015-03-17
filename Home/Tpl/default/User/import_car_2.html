@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/searchform.js"></script>
+</head>
+<style>
+.left {
+	float: left;
+}
+.right {
+	float: left;
+	border: 1px solid #CCC;
+	width: 800px;
+}
+.hover {
+	color: red;
+}
+table tr td{ height:30px; }
+</style>
+<body>
+<div class="left">
+<a href="{:U('User/logout')}">退出</a>
+<ul>
+  <volist id="vo" name="menu">
+    <li> <a href="{$vo.url}">{$vo.name}</a></li>
+  </volist>
+</ul>
+<div class="right">
+  <div class="oneline"> <a href="{:U('User/paimai')}">拍卖中</a> <a href="{:U('User/out_paimai')}">流拍</a> <a href="{:U('User/no_paimai')}">未拍卖</a> <a href="{:U('User/add_paimai')}" 
+    
+    <if condition="$dqaction=='add_paimai'"> class="hover"</if>
+    >新增拍卖</a> </div>
+  <div class="oneline">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12%"><span class="hover">*</span>VIN码：</td>
+        <td width="88%"><input name="data[vin_number]" id="vin_number" value="{$info.vin_number}"  /></td>
+      </tr>
+      <tr>
+        <td><span class="hover"></span>国标码：</td>
+        <td><input name="data[guobiao]" id="guobiao" value="{$info.guobiao}"  /></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车型名称：</td>
+        <td><input name="data[car_model]" id="car_model" value="{$info.car_model}" size="56" /></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车身结构：</td>
+        <td><volist id="vo" name="carinfo[jiegou]" key="key">
+            <label><input type="radio" name="data[car_jiegou]" value="{$vo.id}" id="car_jiegou"  
+              <if condition="$info[jiegou]==$vo[id]"> checked</if>
+              />
+              {$vo.name} </label>
+          </volist></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>发动机号：</td>
+        <td><input name="data[fdjh]" id="fdjh" value="{$info.fdjh}"  /></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车牌状态：</td>
+        <td>
+        
+       <volist id="vo" name="carinfo[chepai_status]" >
+            <label>
+              <input type="radio" name="data[chepai_status]" id="chepai_status" <if condition="$vo[id]==$info[chepai_status]"> checked </if> value="{$vo.id}"/>
+              {$vo.name} </label>
+       </volist>
+          
+          
+       </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车牌号：</td>
+        <td>
+        <select id="chepai_diqu" name="data[chepai_diqu]" >
+        	<volist id="vo" name="diqu">    
+            <option value="{$vo}" <if condition="$vo==$info[chepai_diqu]"> selected </if> >{$vo}</option>
+        	</volist>
+        </select>
+          <input type="text" name="data[chepai_num]" id="chepai_num" value="{$info[chepai_num]}" /></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆类型：</td>
+        <td>
+        <volist id="vo" name="carinfo[cheliang_type]" >
+        <label>
+            <input type="radio" name="data[cheliang_type]" id="cheliang_type" value="{$vo.id}" <if condition="$vo[id]==$info[cheliang_type]"> checked </if>  />
+            {$vo.name}
+        </label>
+        </volist>  
+          </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆牌照：</td>
+        <td>
+        <volist id="vo" name="carinfo[paizhao]" >
+        <label>
+            <input type="radio" name="data[paizhao]" id="paizhao" value="{$vo.id}" <if condition="$vo[id]==$info[car_paizhao]"> checked </if> />
+            {$vo.name}
+        </label>
+        </volist>  
+        </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>发动机号检查：</td>
+        <td>
+        <volist id="vo" name="carinfo[fdjhjc]">
+        <label>
+            <input type="radio" name="data[fdjhjc]" id="fdjhjc" value="{$vo.id}" <if condition="$vo[id]==$info[fdjhjc]"> checked </if> />
+            {$vo.name}
+         </label>
+          </volist>
+          </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>变速箱类型：</td>
+        <td>
+        <volist id="vo" name="carinfo[bsxlx]" >
+        <label>
+            <input type="radio" name="data[bsxlx]" id="bsxlx" value="{$vo.id}" <if condition="$vo[id]==$info[bsxlx]">checked</if> />
+            {$vo.name}
+          </label>
+          </volist>
+          
+          </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>排气量：</td>
+        <td>
+        
+        <input name="data[pql]" id="pql" value="{$info.pql}" />
+          升
+          <input type="checkbox" name="data[is_zy]" id="is_zy" <if condition="$info[is_zy]==1"> checked</if> value="1" />
+          增压 </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车身颜色：</td>
+        <td><select id="yanse" name="data[yanse]" >
+        <option value="">请选择</option>
+        <volist id="vo" name="carinfo[yanse]">
+            <option value="{$vo}">{$vo}</option>
+        </volist>
+          </select>
+          <label>
+            <input type="checkbox" id="yanse2" name="data[yanse2]" value="其他"/>
+            其他</label></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>新车质保：</td>
+        <td>
+        <volist id="vo" name="carinfo[baozhi]">
+        <label>
+            <input type="radio" id="zhibao" name="data[zhibao]" value="{$vo.id}" <if condition="$info[zhibao]==$vo[id]"> checked </if> />
+            {$vo.name}</label>
+        </volist>
+            </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>表显里程：</td>
+        <td>
+        <input type="text" id="bxlc" name="data[bxlc]" value="{$info.bxlc}" />公里
+        </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>实际行驶里程：</td>
+        <td>
+        <input type="text" id="sjlc" name="data[sjlc]" value="{$info.sjlc}" />公里
+        </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆标准配置：</td>
+        <td>
+        <textarea id="clbzpz" name="data[clbzpz]" rows="10" cols="40" >{$info.clbzpz}</textarea>
+        
+        </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车主个性配置：</td>
+        <td>
+        
+        <textarea id="clbzpz" name="data[czgxpz]" rows="10" cols="40" >{$info.czgxpz}</textarea>
+        
+        </td>	
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆库存地：</td>
+        <td>
+        	<select id="ku_sheng" name="data[ku_sheng]" onChange="xuanze_shi()">
+            	<option value="">请选择省</option>
+                <volist id="vo" name="shenglist" >
+                <option value="{$vo.name}">{$vo.name}</option>
+                </volist>
+            </select>
+            <select id="ku_shi" name="data[ku_shi]">
+            	<option value="">请选择市</option>
+            </select>
+            <select id="ku_qu" name="data[ku_qu]">
+            	<option value="">请选择区</option>
+            </select> 
+        </td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆出厂日期：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆注册日期：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>是否一手车：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>原始购车发票：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>行驶本：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>登记证：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车辆所有人性质：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>使用性质：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>环保标准：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>购置税：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车船税到期日：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>年审状况：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>交强险：</td>
+        <td><label>
+            <input type="" name="" id="" value="" />
+          </label></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>商业险：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>商业险金额：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车架号检查：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>车钥匙：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>保养手册记录：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>说明书：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>燃油类型：</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="hover">*</span>是否改装：</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/birthday.js"></script>
+
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/sheng.js"></script>
+
+</body>
+</html>

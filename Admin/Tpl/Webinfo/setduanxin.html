@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>短信配置-系统设置-{$site.SITE_INFO.name}</title>
+    <php>$addCss="";</php>
+    <php>$addJs="";</php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+    <div class="wrap"> <include file="Common:head" />
+        <div class="mainBody"> <include file="Common:left" />
+            <div id="Right">
+                <div class="contentArea">
+                    <div class="Item hr">
+                        <div class="current">短信配置</div>
+                    </div>
+                    <form action="" method="post">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="120">短信服务器：</th>
+                                <td><input name="server" type="text" class="input" size="40" value="{$site.DUANXIN.server}" /> </td>
+                            </tr>
+                            <tr>
+                                <th width="120">短信账户：</th>
+                                <td><input name="account" type="text" class="input" size="40" value="{$site.DUANXIN.account}" /> 如果没有请到<a target="_blank" href="https://mp.weixin.qq.com/">这里</a>申请</td>
+                            </tr>
+                            <tr>
+                                <th width="120">短信APIKEY：</th>
+                                <td><input name="key" type="text" class="input" size="40" value="{$site.DUANXIN.key}" />   </td>
+                            </tr>
+                           
+                        </table>
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+<include file="Common:foot" />
+<script type="text/javascript">
+    $(".submit").click(function(){
+        commonAjaxSubmit();
+    });
+</script>
+</body>
+</html>

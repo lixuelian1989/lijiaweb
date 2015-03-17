@@ -1,0 +1,114 @@
+﻿<?php
+/**
+ +------------------------------------------------------------------------------
+ * 边走边听接口
+ +------------------------------------------------------------------------------
+ * @category   Action
+ * @package  Lib
+ * @subpackage  Action
+ * @author   yangshuai <ysainjh@163.com>
+ * @version  $Id: MemberAction.class.php 2791 2013/12/10  yangshuai $
+ +------------------------------------------------------------------------------
+ */
+class MemberAction extends CommonAction {
+	
+	
+	//用户注册接口
+	public function register($field){
+		$request=json_decode($field);
+		$this->response->head->res_code="0001";
+		$this->response->head->res_msg="error";
+		$this->response->head->res_arg="";
+		$this->response->body->field="[]";
+	
+		$email=$request->email;
+		$username=$request->username;
+		$pwd=$request->passwd;
+		if(empty($username)||empty($pwd)||empty($email)){
+			$this->response->body->field="用户信息不完善";
+			return $this->ajaxReturn($this->response);
+			exit;
+		}
+		//验证用户名或者邮箱是否存在
+		$where['username']=$username;
+		$where['email']=$email;
+		$where['_logic'] = 'or';
+		$member=D('member')->where($where)->find();
+		
+		//用户名已经存在
+		if(count($member)>0){
+			$this->response->body->field="用户名已存在";
+		}else{
+			//注册用户
+			$data['username']=$username;
+			$data['pwd']=md5($pwd);
+			$data['email']=$email;
+			$data['reg_date']=time();
+			$res=D('member')->add($data);
+			//注册成功
+			if($res){
+				//openfire中插入数据
+				$map['username']=$username;
+				$map['plainPassword']=$pwd;
+// 				$map['encryptedPassword']=md5($pwd);
+				$map['creationDate']=time();
+				$map['modificationDate']=time();
+				$ofuser=D('Ofuser')->add($map);
+				//插入成功
+				if($ofuser){
+					$user['uid']=$res;
+					$user['username']=$username;
+					$user['avatar']=dirname(SITE_URL).'/avatar/20131223/20131223165003_55766.jpg';
+					$user['sex']='女';
+					$user['nickname']=empty($user['nickname'])?"无":$user['nickname'];
+					$user['address']='无';
+					$user['sign']='无';
+					$user['mobile']='无';
+					$this->response->head->res_code="0000";
+					$this->response->head->res_msg="success";
+					$this->response->body->field=$user;
+				}
+			}
+		}
+		return $this->ajaxReturn($this->response);
+	}
+	
+	//用户登录接口
+	public function login($field){
+		$request=json_decode($field);
+		$this->response->head->res_code="0001";
+		$this->response->head->res_msg="error";
+		$this->response->head->res_arg="";
+		$this->response->body->field="[]";
+		
+		$username=$request->username;
+		$pwd=$request->password;
+		
+		if(empty($username)||empty($pwd)){
+			$this->response->field="用户名或密码不能为空";
+			return $this->ajaxReturn($this->response);
+			exit;
+		}
+		$user=M('member')->field('id,username,email,avtar,truename,city,lxdz,sex,avtar,birthday')->where(array('username'=>$username,'pwd'=>md5($pwd)))->find();
+		//登录
+		if(!empty($user))
+		{
+				$user['userid']=$user['id'];
+				$user['userNick']=empty($user['truename'])? $user['username']:$username['truename'];
+				$user['city']=empty($user['city'])?"无":$user['city'];
+				$user['contact']=empty($user['lxdz'])?"无":$user['lxdz'];
+				$user['sex']=(empty($user['sex'])||($user['sex']==0))?'女':'男';
+				$user['headImg']=empty($user['avtar'])?dirname(SITE_URL).'/Public/User/img/avtar_big.jpg':dirname(SITE_URL).'/'.$user['avtar'];
+				if(!empty($user['birthday'])){
+					$yeararr=explode('-', $user['birthday']);
+					$user['age']=date("Y")-$yeararr[0];
+				}
+				$this->response->head->res_code="0000";
+				$this->response->head->res_msg="success";
+				$this->response->body->field=$user;
+			
+		}
+		return $this->ajaxReturn($this->response);
+	}
+	
+}

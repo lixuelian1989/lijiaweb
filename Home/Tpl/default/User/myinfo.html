@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.8.3.min.js"></script>
+</head>
+<style>
+.left {
+	float: left;
+}
+.right {
+	float: left;
+	border: 1px solid #CCC;
+	width: 800px;
+}
+</style>
+<body>
+<div class="left">
+<a href="{:U('User/logout')}">退出</a>
+<ul>
+  <volist id="vo" name="menu">
+    <li> <a href="{$vo.url}">{$vo.name}</a></li>
+  </volist>
+</ul>
+<div class="right">
+
+
+
+  <form name="form1" method="post" action="" >
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>真实姓名：</td>
+        <td>{$user_info.truename}</td>
+      </tr>
+      <tr>
+        <td>性别：</td>
+        <td>
+        <if condition="$user_info[sex]==1">男
+        <else />
+        女
+        </if>
+        
+        </td>
+      </tr>
+      <tr>
+        <td>生日：</td>
+        <td>
+        {$user_info.birthday}
+        
+        
+        </td>
+      </tr>
+      <tr>
+        <td>现居地址：</td>
+        <td>{$user_info.address}</td>
+      </tr>
+      <tr>
+        <td>E-mail：</td>
+        <td>{$user_info.email}</td>
+      </tr>
+      <tr>
+        <td>QQ：</td>
+        <td>{$user_info.qq}</td>
+      </tr>
+      <tr>
+        <td>电话：</td>
+        <td>{$user_info.phone}</td>
+      </tr>
+      <tr>
+        <td>通讯地址：{$user_info.txaddress}</td>
+        <td>邮编：{$user_info.youbian}</td>
+      </tr>
+    </table>
+  </form>
+
+
+</div>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/birthday.js"></script>
+</body>
+</html>

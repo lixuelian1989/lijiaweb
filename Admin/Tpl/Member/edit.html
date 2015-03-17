@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>编辑会员-用户管理-{$site.SITE_INFO.name}</title>
+    <php>
+        $addCss="";
+        $addJs="";
+        $currentNav ='用户管理 > 编辑会员';
+    </php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+<div class="wrap"> <include file="Common:head" />
+    <div class="mainBody"> <include file="Common:left" />
+        <div id="Right">
+            <div class="contentArea">
+                <div class="Item hr">
+                    <div class="current">编辑会员</div>
+                </div>
+                <form action="" method="post">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                        <tr>
+                            <th>会员类型：</th>
+                            <td>
+<label> <input name="info[mtype]" type="radio"  value="1" <if condition="$info[mtype]==1"> checked </if> />
+卖家
+</label>
+
+<label> <input name="info[mtype]" type="radio"  value="2" <if condition="$info[mtype]==2"> checked </if> />
+买家
+</label>
+</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>手机号：</th>
+                            <td><input name="info[phone]" type="text" class="input" size="40" value="{$info.phone}" /></td>
+                        </tr>
+                        <tr>
+                            <th width="120">用户名：</th>
+                            <td><input name="info[nickname]" type="text" class="input" size="30" value="{$info.nickname}" /></td>
+                        </tr>
+                        
+                        <tr>
+                            <th width="120">密码：</th>
+                            <td><input name="info[pwd]" type="password" class="input" size="30" value="" />  不修改留空</td>
+                        </tr>
+                        <tr>
+                            <th width="120">地址：</th>
+                            <td><input name="info[address]" type="text" class="input" size="30" value="{$info.address}" /></td>
+                        </tr>
+                        
+                        <tr>
+                          <th width="120">补充说明：</th>
+<td>
+                            <textarea name="info[beizhu]" cols="50" rows="20"  >{$info.beizhu}</textarea>
+                            
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                    </table>
+                    <input type="hidden" name="uid" value="{$info.uid}"/>
+                </form>
+                <div class="commonBtnArea" >
+                    <button class="btn submit">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<include file="Common:foot" />
+<js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+<script type="text/javascript">
+    $(function(){
+        $(".submit").click(function(){
+            commonAjaxSubmit();
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

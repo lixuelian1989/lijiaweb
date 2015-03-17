@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>视频配置-系统设置-{$site.SITE_INFO.name}</title>
+    <php>$addCss="";</php>
+    <php>$addJs="";</php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+    <div class="wrap"> <include file="Common:head" />
+        <div class="mainBody"> <include file="Common:left" />
+            <div id="Right">
+                <div class="contentArea">
+                    <div class="Item hr">
+                        <div class="current">视频配置</div>
+                    </div>
+                    <form action="" method="post">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="120">免费分钟数：</th>
+                                <td><input name="free_minute" type="text" class="input" size="40" value="{$site.SHIPIN.free_minute}" />  分钟 
+                                <br /> 会员注册以后可以免费试听**分钟
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="120">视频浮动范围：</th>
+                                <td><input name="fudongfanwei" type="text" class="input" size="40" value="{$site.SHIPIN.fudongfanwei}" />  分钟 
+                                <br /> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="120">会员做错题数：</th>
+                                <td><input name="num" type="text" class="input" size="40" value="{$site.SHIPIN.num}" />  个
+                                <br /> 注：会员做错**题之后可以去看知识点的视频
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+<include file="Common:foot" />
+<script type="text/javascript">
+    $(".submit").click(function(){
+        commonAjaxSubmit();
+    });
+</script>
+</body>
+</html>

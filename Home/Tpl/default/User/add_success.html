@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+        <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+        <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+    <css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+    <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/koala.min.1.5.js"></script>
+    <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery.js"></script>
+</head>
+
+<body>
+    <style>
+        body {	background: url(__ROOT__/Home/Tpl/default/Public/images/bg2_01.jpg) no-repeat top center #eeeeee}
+    </style>
+
+<include file="Common:header_login" />
+<!-------------->
+<div class="dlbg zhuceym">
+    <div class="dlck">
+        <table class="tbbox">
+            <tr>
+                <td width="173" class="yhm">
+            <if condition="$message[status]==1">
+                <img src="__ROOT__/Home/Tpl/default/Public/images/cg_03.png" />
+            </if>
+            <if condition="$message[status]==0">
+                错误
+            </if>
+
+            </td>
+            <td width="295" style="font-size:24px; color:#ec1f1f">{$message[info]}</td>
+            <td width="8"></td>
+            </tr>
+            <tr>
+                <td style="font-size:16px;" colspan="2" class="yhm"><div id="show">  
+                        倒计时3秒后关闭当前窗口  
+                    </div><a href="javascript:window.opener=null;window.open('','_self');window.close();">直接关闭本页面</a></td>
+                <td></td>
+            </tr>
+            <script type="text/javascript">
+                var time = 3
+                var urls = "{$message[url]}";
+                function closeWindow() {
+                    window.setTimeout('closeWindow()', 1000);
+                    if (time > 0) {
+                        document.getElementById("show").innerHTML = " 倒计时<font color=red>" + time + "</font>秒后关闭当前窗口";
+                        time--;
+                    }
+                    else {
+                        
+                        if (urls == '') {
+                           
+                            window.opener = null; //关闭窗口时不出现提示窗口  
+                            window.close();
+                        }
+                    }
+                }
+                closeWindow();
+                if(urls!="")
+                window.location.href=urls;
+                
+            </script>  
+
+
+
+
+
+
+
+
+        </table>
+    </div>
+</div>
+<!-------------->
+
+<include file="Common:footer" />
+</body>
+

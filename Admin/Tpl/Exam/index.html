@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>试卷管理-{$site.SITE_INFO.name}</title>
+    <php>
+        $addCss="";
+        $addJs="";
+        $currentNav ='试卷管理 >导入试卷';
+    </php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+<div class="wrap">
+    <include file="Common:head" />
+    <div class="mainBody">
+        <include file="Common:left" />
+        <div id="Right">
+            <div class="Item hr">
+                <div class="current" style="max-width: 100px; float: left;">试卷管理</div>
+                <div style="width: 100px;float: right;"><button type="button" class="btn" onclick="window.location.href='{:U('Siteinfo/add_link')}'">添加</button></div>
+            </div>
+            <form method="post" action="" enctype="multipart/form-data" id="form1" name="form1">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                    <tr>
+                        <td align="left"><span class="red">*</span>科目</td>
+                        <td>
+
+                        <select id="km_id" name="km_id">
+                        <option value="0">请选择科目</option>
+                        
+                        <volist name="list" id="vo">
+                        <option value="{$vo.km_id}">{$vo.km_name}</option>
+                        </volist>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td align="left"><span class="red">*</span>试卷名称：</td>
+                        <td>
+						<input name="exam_name" type="text" id="exam_name" value="{$vo.exam_name}" size="50" maxlength="200" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">试卷来源：</td>
+                        <td>
+						<input type="text" name="source" id="source" value="{$vo.source}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">试卷备注：</td>
+                        <td>
+                        <textarea name="beizhu" cols="48" rows="12" id="beizhu" >{$vo.beizhu}</textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td align="left"><span class="red">*</span>考试时长：</td>
+                        <td>
+						<input type="text" name="times" id="times" value="{$vo.times}" />(以分钟为单位)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left"><span class="red">*</span>考试分数：</td>
+                        <td>
+						<input type="text" name="score" id="score" value="{$vo.score}" />(以分钟为单位)
+                        </td>
+                    </tr>
+                    
+					<tr>
+                        <td align="left"><span class="red">*</span>请选择txt文档进行上传</td>
+                        <td><input type="file" name="txtname" id="txtname" /></td>
+                    </tr>
+					<tr>
+                        <td align="left"></td>
+                        <td><input type="submit" class="btn submit" name="sub" id="sub" value="提交" /></td>
+                    </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<include file="Common:foot" />
+<script type="text/javascript">
+    $(function(){
+        $(".del").click(function(){
+            var delLink=$(this).attr("link"),$this = $(this);
+            popup.confirm('你真的打算删除【<b>'+$(this).attr("name")+'</b>】吗?','温馨提示',function(action){
+                if(action == 'ok'){
+                    delByLink(delLink,$this);
+                }
+            });
+            return false;
+        });
+		$(".submit").click(function(){
+            commonAjaxSubmit();
+            return false;
+        });
+    });
+	function change_orderid(obj,id){
+		var values=obj.value;
+		$.get(
+			"{:U('Kmfl/update_orderid/',array('id'=>$vo['km_id']))}",
+				function(data){
+					alert(data);
+				}			
+			);
+		
+		
+		
+	}
+</script>
+</body>
+</html>

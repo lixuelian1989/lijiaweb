@@ -1,0 +1,11 @@
+User-Agent: *
+Disallow: /Conist
+Disallow: /Uploads
+Disallow: /system.php
+Disallow: /Public
+Disallow: /Databases
+Disallow: /Cache
+Disallow: /Common
+Disallow: /Admin
+Disallow: /Conist
+

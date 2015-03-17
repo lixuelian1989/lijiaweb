@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+    <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+    <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+    <css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+</head>
+
+<body>
+<div id="div1"><img id="div1" src="banner.gif" /><img src="__ROOT__/Home/Tpl/default/Public/images/bg.jpg" /></div>
+<div class="top">
+	<div class="logobox l"><a href=""><img src="__ROOT__/Home/Tpl/default/Public/images/logo.png" /></a></div>	
+    <div class="navbox r">
+    	<ul>
+        	<!--<li><p><a href=" ">新闻动态</a></p><p class="yw"><a href="#">News</a></p></li>
+            <li><p><a href="#">关于我们  </a></p><p class="yw"><a href="#">About</a></p></li>
+            <li><p><a href="#">联系我们</a></p><p class="yw"><a href="#">Contact Us   </a></p></li>
+            <li><p><a href="#">中文</a></p><p class="yw"><a href="#">Chinese  </a></p></li>
+            <li><p><a href="#">英文</a></p><p class="yw"><a href="#"> English</a></p></li>
+            -->
+            <nav posstion="middle" order="sort DESC">
+			<li><p><a href="{:U('nav/index',array('id'=>$id))}" title='{$nav_name}' <if condition="$target eq 1">target="_blank"</if>  ><span>{$nav_name}</span></a></p>
+            <p class="yw"><a href="#"> English</a></p>
+            
+            </li>
+            <li><p><a href="#">中文</a></p><p class="yw"><a href="#">Chinese  </a></p></li>
+            <li><p><a href="#">英文</a></p><p class="yw"><a href="#"> English</a></p></li>
+            
+            </nav>
+            
+            
+        </ul>
+    </div>
+    <div class="cl"></div>
+</div>
+

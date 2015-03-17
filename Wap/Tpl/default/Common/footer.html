@@ -1,0 +1,22 @@
+<!--FOOTER START-->
+<div id="footer">
+    <div id="fnav">
+        <ul>
+            <li><a title="{$Think.lang.T_HOME}" href="wap.php" <php>if('index'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_HOME}</a></li>
+            <li   ><a href="{:U('about/index')}" title='{$Think.lang.T_ABOUT}' <php>if('about'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_ABOUT}</a></li>
+            <li   ><a href="{:U('product/index')}" title='{$Think.lang.T_PRODUCT}' <php>if('product'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_PRODUCT}</a></li>
+            <li   ><a href="{:U('message/index')}" title='{$Think.lang.T_MESSAGE}' <php>if('message'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_MESSAGE}</a></li>
+            <li   ><a href="{:U('contact/index')}" title='{$Think.lang.T_CONTACT}' <php>if('contact'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_CONTACT}</a></li>
+            <li   ><a href="{$site.SITE_INFO.url}" title='PC端'>PC端</a></li>
+        </ul>
+        <div class="c"></div>
+    </div>
+    <div id="copyright">
+        &copy; 2013 Conist, All Rights Reserved
+    </div>
+</div>
+<!--FOOTER END-->
+</div>
+
+</body>
+</html>

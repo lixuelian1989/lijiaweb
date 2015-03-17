@@ -1,0 +1,24 @@
+<div class="sidebar inner">
+    <include file="Common:ad" />
+    <div class="sb_nav">
+        <h3 class='title'>{$info.page_name}</h3>
+        <div class="active" id="sidebar" data-csnow="42" data-class3="0" data-jsok="2">
+            <volist name="catlist" id="vo">
+            <dl class="list-none navnow"> <dt id='part_{$vo["unique_id"]}'><a href='{:U("page/index",array("name"=>$vo["unique_id"]))}'  title='{$vo.page_name}' class="zm"><span>{$vo.page_name}</span></a></dt></dl>
+            </volist>
+            <div class="clear"></div></div>
+    </div>
+    <div class="sb_box" >
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="Home">{$Think.lang.T_HOME}</a> &gt; <a href='{:U("page/index",array("name"=>$info["unique_id"]))}' >{$info.page_name}</a></div>
+            <span>{$info.page_name}</span>
+        </h3>
+        <div class="clear"></div>
+
+        <div class="editor active" id="showtext">
+            {$info['content']}
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

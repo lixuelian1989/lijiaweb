@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>登录-{$site.name}</title>
+        <base href="{$site.WEB_ROOT}"/>
+        <css href="../Public/Css/base.css"/>
+        <css href="../Public/Css/layout.css"/>
+        <css href="__PUBLIC__/Js/asyncbox/skins/default.css{$addCss}"/>
+     
+</head>
+
+<body class="loginWeb">
+    <div class="loginBox">
+        <div class="innerBox">
+            <div class="logo"> <img src="../Public/Img/logo.png" /></div>
+            <form id="form1" action="" method="post">
+                <h1  style="text-align: center;margin-top: 30px; margin-bottom: 20px;color: #214FA3">用户登录</h1>
+                <div class="loginInfo">
+                    <ul>
+                        <li class="row1">登录账号(手机号码)：</li>
+                        <li class="row2"><input class="input" name="email" id="email" style="width: 200px;"  type="text"  value="{$_COOKIE['name']}"/></li>
+                    </ul>
+                    
+                    <ul>
+                        <li class="row1">登录密码：</li>
+                        <li class="row2"><input class="input" name="pwd" id="pwd" style="width: 200px;"  type="password" value="{$pwd}"/></li>
+                    </ul>
+                    <ul>
+                        <li class="row1">验证码：</li>
+                        <li class="row2"><input class="input" id="verify_code" name="verify_code" type="text" style="width:100px;" /> <img src="/system.php/Public/verify_code"  title="看不清？单击此处刷新" onclick="this.src+='?rand='+Math.random();"  style="cursor: pointer; vertical-align: middle;"/></li>
+                    </ul>
+                    <ul>
+                        <li><input type="checkbox" class="checkbox" name="chkRememberMe"  value='1'></li>
+                        <li>自动登录</li>
+                    </ul>
+                </div>
+                <input type="hidden" name="op_type" id="op_type" value="1"/>
+            </form>
+            <div class="clear"></div>
+            <div class="operation">
+                <button class="btn submit">登录</button>   
+                <a href="{:U('user/findPwd_account')}">    <button class="btn findPwd">忘记密码？</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $(".submit").click(function(){
+                $("#op_type").val("1");
+                if($("#email").val()==''||$("#pwd").val()==''||$("#verify_code").val()==''){
+                    popup.alert("填写完整方可登陆");
+                    return false;
+                }
+                commonAjaxSubmit();
+            });
+           
+        });
+    </script>
+</body>
+</html>

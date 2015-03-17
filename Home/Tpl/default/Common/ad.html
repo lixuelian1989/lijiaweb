@@ -1,0 +1,13 @@
+<if condition="$ad_info neq ''">
+    <style>
+        #pagination{ display: none;}
+        #slides{height: 300px;}
+    </style>
+    <div id="marquee">
+        <ul id="slides" class="list-none">
+            <volist name="ad_info" id="vo">
+                <li style="background:url('__UPLOAD__/pictures/{$vo.ad_img}') no-repeat center top"><a href="{$vo.ad_link}" target="_blank">{$vo.ad_name}</a></li>
+            </volist>
+        </ul>
+    </div>
+</if>

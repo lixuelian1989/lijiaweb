@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+    <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+    <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+    <css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/koala.min.1.5.js"></script>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery.js"></script>
+</head>
+
+<body>
+<include file='Common:header_user' />
+<style>
+body {	background: url(__ROOT__/Home/Tpl/default/Public/images/bg.jpg) no-repeat top center #eeeeee}
+</style>
+
+
+<div class="fgzc">
+	<div class="fgbanner">
+	  <div id="fsD1" class="focus" >
+	    <div id="D1pic1" class="fPic">
+        
+	      <div class="fcon" style="display: none;">
+          	 <a target="_blank" href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/01.jpg" style="opacity: 1; " /></a>
+           	<span class="shadow"><a target="_blank" href="#">banner说明文字</a></span>
+          </div>
+	      <div class="fcon" style="display: none;"> 
+          	<a target="_blank" href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/02.jpg" style="opacity: 1; " /></a>
+             <span class="shadow"><a target="_blank" href="#">banner说明文字</a></span>
+          </div>
+	      <div class="fcon" style="display: none;"> 
+           	<a target="_blank" href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/03.jpg" style="opacity: 1; " /></a>
+             <span class="shadow"><a target="_blank" href="#">banner说明文字</a></span>
+           </div>
+	      <div class="fcon" style="display: none;">
+           	 <a target="_blank" href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/04.jpg" style="opacity: 1; " /></a>
+             <span class="shadow"><a target="_blank" href="#">banner说明文字</a></span> 
+         </div>
+        </div>
+	    <div class="fbg">
+	      <div class="D1fBt" id="D1fBt"> 
+          	<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>
+            <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> 
+            <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>
+            <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a> </div>
+        </div>
+	    <span class="prev"></span> <span class="next"></span> </div>
+        
+        <script type="text/javascript">
+	Qfast.add('widgets', { path: "__ROOT__/Home/Tpl/default/Public/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>
+	</div>
+   
+    
+    <div class="han_main">
+    	<include file='Common:left_user' />        
+        
+        <div class="han_right r">
+        	<div  class="serchbox">
+        	  <input class="tex" type="text" />
+        	  <input class="bt" type="button" />
+          </div>
+            <div class="right_nr">
+  <ul class="bbgg">
+                	<volist id="vo" name="lc_list">
+                    <li><a title="{$vo.lc_name}" href="{$vo.lc_id}" target="_blank"><img src="{$vo.lc_img}" width="90" height="90" /><p>{$vo.lc_name|msubstr=0,18,'utf-8',false}</p></a></li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+        <div class="cl"></div>
+    </div>
+    
+     <div class="bottombanner"><img src="__ROOT__/Home/Tpl/default/Public/images/03.jpg" /></div>
+</div>
+
+
+
+
+<include file='Common:footer_in' />
+</body>

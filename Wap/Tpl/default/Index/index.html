@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(function() {
+        $j(".jcarousellite").jCarouselLite({
+            btnNext: ".next",
+            btnPrev: ".prev",
+            visible: 3,
+            speed: 200
+        });
+
+    });
+</script>
+<div id="container">
+    <!--HEADER START-->
+   <include file="Common:nav" />
+    <!--HEADER END-->
+    <!--CONTENT START-->
+    <div id="content">
+        <div class="contentbg">
+            <div class="contenttop">
+                <div class="contentbottom">
+                    <h1>{$Think.lang.T_WELCOME}</h1>
+                    <p><weblock name="wapindexwelcome" /></p>
+                    <h1 style="margin-bottom:5px;">{$Think.lang.T_PRODUCT}</h1>
+                    <div class="gallerybg">
+                        <div class="galleryleft">
+                            <div class="galleryright">
+                                <div id="jcarousellite_holder_wrapper">
+                                    <div id="jcarousellite_holder">
+                                        <div class="jcarousellite">
+                                            <ul id="sliderlite">
+                                                <volist name="plist" id="vo">
+                                                <li><img src="__UPLOAD__/product/{$vo.image}" alt="" width="75" height="75"  /></li>
+                                               </volist>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="prev"></a> <a href="#" class="next"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT END-->

@@ -1,0 +1,20 @@
+<div id="container">
+    <!--HEADER START-->
+    <include file="Common:nav" />
+    <!--HEADER END-->
+    <!--CONTENT START-->
+<div id="content">
+    <div class="contentbg">
+        <div class="contenttop">
+            <div class="contentbottom">
+                <h1>{$Think.lang.T_PRODUCT}</h1>
+                <volist name="wap_p_list" id="vo">
+                <h3>{$vo.title}</h3>
+                <div class="productimg"><img src="__UPLOAD__/product/{$vo.image}" width="274" height="106" alt="{$vo.title}" /></div>
+                <p>{$vo.description}</p>
+                </volist>
+            </div>
+        </div>
+    </div>
+</div>
+<!--CONTENT END-->

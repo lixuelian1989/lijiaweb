@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>法规颁布国家管理-法规管理-后台管理首页-{$site.SITE_INFO.name}</title>
+<php>
+$addCss="";
+            $addJs="";
+            $currentNav ='法规管理 > 法规颁布国家管理';
+            </php>
+            <include file="Common:intoHead" />
+            </head>
+            <body>
+<div class="wrap"> <include file="Common:head" />
+              <div class="mainBody"> <include file="Common:left" />
+    <div id="Right">
+                  <div class="Item hr">
+        <div class="current">法规颁布国家管理</div>
+      </div>
+                  <form action="" method="post" id="quickForm1">
+        <b>添加国家：</b>
+        <input type="hidden" name="act" value="add" />
+        &nbsp;
+        <input type="file" name="imgsrc" id="imgsrc" />
+        &nbsp;
+        <php>if($site['SITE_INFO']['LANG_SWITCH_ON']=='1'){</php>
+        <select name="data[lang]">
+                      <option value="zh-cn"  >简体中文</option>
+                      <option value="zh-en"  >English</option>
+                    </select>
+        &nbsp;
+        <php>}</php>
+        <input placeholder="你要添加的颁布国家" id="newName" class="input" type="text" name="data[lc_name]" value="" />
+        &nbsp;
+        <input type="button" class="btn quickSubmit" onclick="dj_add()" value="确定添加" />
+      </form>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab">
+        <thead>
+                      <tr align="center">
+            <td width="10%">原国家lc_id</td>
+            <td width="20%">原国家 <b title="单击分类隐藏/显示该分类下在子类">[i]</b></td>
+           
+           
+        
+            <td width="10%">操作</td>
+          </tr>
+                    </thead>
+        <tbody>
+                      <volist name="list" id="tree">
+            <tr pid="0" lc_id="{$tree.lc_id}">
+                          <td width="10%" align="center">{$tree.lc_id}
+                <input type="hidden" name="lc_id" value="{$tree.lc_id}"/></td>
+                          <td width="20%" class="tree" style="cursor: pointer;">{$tree.lc_name}
+          </td>
+                          
+                          
+                          
+                          <td align="center" width="10%"><button class="btn" onclick="del_lc('{$tree.lc_id}')">删除</button>
+                          <button class="btn" onclick="update_lc('{$tree.lc_id}')">修改</button>
+                          
+                          </td>
+                        </tr>
+          </volist>
+                    </tbody>
+      </table>
+                </div>
+  </div>
+            </div>
+<form name="actform" id="actform">
+<input type="hidden" id="lc_id_act" name="data['lc_id']" value="" />
+<input type="hidden" id="act_act" name="act" value="" />
+
+</form>
+<div class="clear"></div>
+<include file="Common:foot" /> 
+<script type="text/javascript">
+function dj_add(){
+	if($("#newName").val()==''){
+		popup.alert("颁布国家不能为空滴！");
+	    return false;
+    }
+					
+    commonAjaxSubmit("","#quickForm1");
+    return false;
+}			
+function del_lc(lcid){
+	$("#lc_id_act").val(lcid);
+	$("#act_act").val('del');
+	if(confirm("您确定要删除吗？")){
+		commonAjaxSubmit("","#actform");
+		return false;
+	}
+}
+function update_lc(lcid){
+	window.location='{:U("laws/lawscountryupdate")}?lcid='+lcid;
+}
+
+
+</script>
+</body>
+</html>

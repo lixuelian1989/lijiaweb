@@ -1,0 +1,129 @@
+<style>
+    .table1{ border-top: #ddd solid 1px; }
+    .table1 tr:hover{ background-color:#fafafa;}
+    .table1 th {
+        border-right: 1px solid #E5E3E3;
+        font-weight: 100;
+        line-height: 24px;
+        padding: 5px 10px 7px;
+        text-align:right;
+    }
+    .table1 td {
+        line-height: 24px;
+        padding: 5px 10px 7px;
+    }
+    .tab {
+        margin: 15px 0;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ddd #ddd #fff #fff;
+        text-shadow: 0 1px 0 #FFFFFF;
+        border-collapse: separate;
+    }
+    .tab td {
+        padding: 5px 10px;
+        margin: 15px 0;
+        line-height: 24px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #fff #fff #ddd #ddd;
+    }
+    .tab thead td { text-align: center; }
+    .tab tbody tr:hover { background: #fff; }
+    input{ vertical-align: middle;}
+    .input { height: 18px; }
+    .input, textarea, select {
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-shadow: 2px 2px 2px #F0F0F0 inset;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 18px;
+        padding: 4px;
+        margin: 0;
+        vertical-align: middle;
+    }
+    option{ height: 16px;}
+    .clear { clear:both; }
+    .fr{ float: right;}
+    .line {
+        height:2px;
+        overflow:hidden;
+        margin:5px 0px;
+    }
+    .btn {
+        margin-right: 10px;
+        min-width: 80px;
+        background: #1b75b6;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        color:#fff;
+        border: 1px solid #106bab;
+        border-radius: 3px;
+        padding:4px 5px 4px 10px;
+        display: inline-block;
+        cursor: pointer;
+        font-size:100%;
+        line-height: normal;
+        text-decoration:none;
+        overflow:visible;
+        vertical-align: middle;
+        text-align:center;
+        zoom: 1;
+        white-space:nowrap;
+        font-family:inherit;
+        letter-spacing:5px;
+    }
+</style>
+<div class="sidebar inner">
+    <include file="Common:ad" />
+    <div class="sb_nav">
+        <h3 class='title'>{$Think.lang.T_MESSAGE}</h3>
+        <div class="active" id="sidebar" data-csnow="42" data-class3="0" data-jsok="2">
+            <volist name="catlist" id="vo">
+                <dl class="list-none navnow"> <dt id='part_{$vo["unique_id"]}'><a href='{:U("page/index",array("name"=>$vo["unique_id"]))}'  title='{$vo.page_name}' class="zm"><span>{$vo.page_name}</span></a></dt></dl>
+            </volist>
+            <div class="clear"></div></div>
+    </div>
+    <div class="sb_box" >
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="Home">{$Think.lang.T_HOME}</a> &gt; <a href='#' >{$Think.lang.T_MESSAGE}</a></div>
+            <span>{$Think.lang.T_MESSAGE}</span>
+        </h3>
+        <div class="clear"></div>
+
+        <div class="editor active" id="showtext">
+
+            <form action="{:U('message/add')}" method="post">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                    <tr>
+                        <th width="120">{$Think.lang.T_NAME}：</th>
+                        <td><input name="username" type="text" class="input" size="40" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th>{$Think.lang.T_EMAIL}：</th>
+                        <td><input name="email" type="text" class="input" size="40" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th>{$Think.lang.T_MOBILE}：</th>
+                        <td><input class="input" name="moblie" type="text" size="40" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th>{$Think.lang.T_MESSAGE_CONTENT}：</th>
+                        <td><textarea name="content" style="width: 280px; height: 80px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>{$Think.lang.T_CODE}：</th>
+                        <td><input class="input" name="verify_code" id="verify_code" type="text" size="20" value="" />
+                            <img src="{:U('Base/verify_code')}"  title="看不清？单击此处刷新" onclick="this.src+='?rand='+Math.random();"  style="cursor: pointer; vertical-align: middle;"/>
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align: center;margin-top: 30px;">
+                    <button class="btn submit">提交</button>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

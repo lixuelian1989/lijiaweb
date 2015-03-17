@@ -1,0 +1,85 @@
+<script language="javascript">
+    function checkform()
+    {
+        var re_mail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z])+$/;
+        if(document.business.txtname.value=="")
+        {
+            alert("{$Think.lang.T_ENTER_NAME}");
+            document.business.txtname.focus();
+            return false;
+        }
+
+        if(!re_mail.test(document.business.txteml.value))
+        {
+            alert("{$Think.lang.T_VERIFY_EMAIL}");
+            document.business.txteml.focus();
+            return false;
+        }
+        if(document.business.txtenqdetail.value=="")
+        {
+            alert("{$Think.lang.T_ENTER_DETAILS}");
+            document.business.txtenqdetail.focus();
+            return false;
+        }
+        return true;
+    }
+    function isNumberOnly(e)
+    {
+        var unicode=e.charCode? e.charCode : e.keyCode
+        if (unicode!=8 && unicode!=9)
+        {
+            if (unicode<48||unicode>57)
+                return false
+        }
+    }
+    function isCharOnly(e)
+    {
+        var unicode=e.charCode? e.charCode : e.keyCode
+        if (unicode==45)
+            return true;
+        if (unicode>48 && unicode<57) //if not a number
+            return false;
+    }
+
+</script>
+<div id="container">
+    <!--HEADER START-->
+    <include file="Common:nav" />
+    <!--HEADER END-->
+    <!--CONTENT START-->
+    <div id="content">
+        <div class="contentbg">
+            <div class="contenttop">
+                <div class="contentbottom">
+                    <h1>{$Think.lang.T_MESSAGE}</h1>
+                    <if condition="$showtext eq 1">
+                    <div id="inquiry" style="padding:10px;">
+                        <b><font color="#FF0000">{$Think.lang.T_INQUIRY}</font></b>
+                    </div>
+                        </if>
+                    <form method="post" action="__URL__" id="inquiry2" name="business" style="padding-left:7px;" language="JavaScript" onSubmit="return checkform();">
+                        <p>
+                            <label for="name">{$Think.lang.T_NAME}: <span>*</span></label>
+                            <input type="text" tabindex="1" value="" name="txtname" id="txtname" />
+                        </p>
+                        <p>
+                            <label for="phone">{$Think.lang.T_MOBILE}: </label>
+                            <input type="text" tabindex="3"  value="" id="txttel" name="txttel" onKeyPress="return isNumberOnly(event);"  />
+                        </p>
+                        <p>
+                            <label for="email">{$Think.lang.T_EMAIL} <span>*</span></label>
+                            <input type="text" tabindex="4" value="" id="txteml" name="txteml"  />
+                        </p>
+                        <p>
+                            <label for="enquirydetails">{$Think.lang.T_MESSAGE_CONTENT}: <span>*</span></label>
+                            <textarea tabindex="5" rows="" cols="" id="txtenqdetail" name="txtenqdetail"></textarea>
+                        </p>
+                        <p class="submit">
+                            <input type="image" tabindex="6" id="Submit" name="Submit" value="Submit" src="__ROOT__/Wap/Tpl/default/Public/images/submitbtn.jpg" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT END-->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<link href="__ROOT__/Home/Tpl/default/Public/css/public.css" rel="stylesheet" />
+<link href="__ROOT__/Home/Tpl/default/Public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<include file='Common:header' />
+<div class="Head_nav">
+  <div class="M"> <a href="{:U('Index/index')}">首页</a> <a href="">我要卖车</a> <a href="">我要置换</a> <a href="{:U('news/index')}" class="active">84资讯</a> <a href="">84分享</a> <a href="">团新车</a> </div>
+</div>
+<div class="Kong"></div>
+<div class="zhaopin_maintitle">84招聘</div>
+<div class="zhaopin_main">
+  <div class="zhaopin_left">
+    <ul>
+      <li><a href="{:U('Page/index',array('name'=>'lianxiwomen'))}">联系我们</a></li>
+      <li><a href="{:U('Page/index',array('name'=>'hezuofangshi'))}">合作方式</a></li>
+      <li class="hover"><a href="{:U('Zhaopin/index')}">84招聘</a></li>
+    </ul>
+  </div>
+  <div class="zhaopin_right"> <a href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/zhaopin_banner1.jpg"/></a> <a href="#"><img src="__ROOT__/Home/Tpl/default/Public/images/zhaopin_banner1.jpg"/></a>
+    <table width="682" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th>职位</th>
+        <th>类别</th>
+        <th>招聘人数</th>
+        <th>工作地点</th>
+        <th>发布时间</th>
+      </tr>
+      <volist id="vo" name="list">
+      <tr>
+        <td><a href="{:U('Zhaopin/read',array('id'=>$vo[id]))}" target="_blank">{$vo.name}</a></td>
+        <td><a  href="{:U('Zhaopin/read',array('id'=>$vo[id]))}" target="_blank">{$vo.leibie}</a></td>
+        <td><a  href="{:U('Zhaopin/read',array('id'=>$vo[id]))}" target="_blank">{$vo.peonum}</a></td>
+        <td><a  href="{:U('Zhaopin/read',array('id'=>$vo[id]))}" target="_blank">{$vo.address}</a></td>
+        <td><a  href="{:U('Zhaopin/read',array('id'=>$vo[id]))}" target="_blank">{$vo.adddate}</a></td>
+      </tr>
+      </volist>
+    </table>
+    
+    <div class="page">
+    	{$page}
+    </div>
+    
+    
+    <div class="lianxi_fs">
+    联系方式
+    </div>
+    <div class="lianxi_txt">
+    简历投递至：{$site.SITE_INFO.service}
+    </div>    
+    <div class="lianxi_txt">
+    电话：{$site.SITE_INFO.tel}
+    </div>        
+    <div class="lianxi_txt">
+    地址：{$site.SITE_INFO.address}
+    </div>    
+    <div class="ad">
+    	<div class="ad_con">
+	        <a href="#">
+    	    	<img src="/Home/Tpl/default/Public/images/ad_44.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="ad_con">
+	        <a href="#">
+    	    	<img src="/Home/Tpl/default/Public/images/ad_44.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="ad_con">
+	        <a href="#">
+    	    	<img src="/Home/Tpl/default/Public/images/ad_44.jpg" alt=""/>
+            </a>
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="Kong"></div>
+<include file='Common:footer' />

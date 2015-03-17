@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+    <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+    <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+
+<link href="__ROOT__/Home/Tpl/default/Public/css/public.css" rel="stylesheet" />
+<link href="__ROOT__/Home/Tpl/default/Public/css/style.css" rel="stylesheet" />
+
+    
+</head>
+
+<body>
+<include file='Common:header' />
+<div class="Head_nav">
+    <div class="M">
+        <a href="{:U('Index/index')}">首页</a>
+        <a href="">我要卖车</a>
+        <a href="">我要置换</a>
+        <a href="{:U('news/index')}" class="active">84资讯</a>
+        <a href="">84分享</a>
+        <a href="">团新车</a>
+    </div>
+</div>
+
+
+<div class="Head_nav_xia">
+	<a href="{:U('news/index')}">84资讯  ></a>
+</div>
+
+<div class="Kong"></div>
+<div class="M Replacement_advertis">
+	<img src="__ROOT__/Home/Tpl/default/Public/images/zc_img17.jpg" />
+</div>
+<div class="Kong"></div>
+<div class="Kong"></div>
+
+<div class="M Information_list">
+	<div class="Infor_list l">
+		<div class="Infor_list_title">
+        	<a href="{:U('News/newslist',array('cid'=>1))}">MORE</a>
+            <h2>84PAI动态</h2>
+        </div>
+        <ul class="Infor_ul">
+        	<volist id="vo" name="newlist1">
+        	<li><a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}">{$vo.title|cn_substr=0,27}</a></li>
+        	</volist>
+        </ul>
+	</div>
+    <div class="Infor_list r">
+		<div class="Infor_list_title">
+        	<a href="{:U('News/newslist',array('cid'=>2))}">MORE</a>
+            <h2>行业新闻	</h2>
+        </div>
+        <ul class="Infor_ul">
+        	<volist id="vo" name="newlist2">
+        	<li><a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}">{$vo.title|cn_substr=0,27}</a></li>
+        	</volist>
+        </ul>
+	</div>
+    <div class="Infor_list l">
+		<div class="Infor_list_title">
+        	<a href="{:U('News/newslist',array('cid'=>3))}">MORE</a>
+            <h2>84关爱</h2>
+        </div>
+        <ul class="Infor_ul">
+        	<volist id="vo" name="newlist3">
+        	<li><a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}">{$vo.title|cn_substr=0,27}</a></li>
+        	</volist>
+        </ul>
+	</div>
+    <div class="Infor_list r">
+		<div class="Infor_list_title">
+        	<a href="{:U('News/newslist',array('cid'=>4))}">MORE</a>
+            <h2>专题活动	</h2>
+        </div>
+        <ul class="Infor_ul">
+        	<volist id="vo" name="newlist4">
+        	<li><a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}">{$vo.title|cn_substr=0,27}</a></li>
+        	</volist>
+        </ul>
+	</div>
+</div>
+
+
+<div class="M Replacement_advertis">
+	<img src="__ROOT__/Home/Tpl/default/Public/images/zc_img31.jpg" />
+</div>
+<div class="Kong"></div>
+<div class="Kong"></div>
+<div class="Kong"></div>
+
+
+
+
+
+
+
+<include file='Common:footer' />

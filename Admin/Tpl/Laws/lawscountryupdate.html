@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改法规颁布国家-法规管理-后台管理首页-{$site.SITE_INFO.name}</title>
+<php>
+$addCss="";
+            $addJs="";
+            $currentNav ='法规管理 >修改法规颁布国家';
+            </php>
+            <include file="Common:intoHead" />
+            </head>
+            <body>
+<div class="wrap"> <include file="Common:head" />
+              <div class="mainBody"> <include file="Common:left" />
+    <div id="Right">
+                  <div class="Item hr">
+        <div class="current">修改法规颁布国家</div>
+      </div>
+       <form name="form_update" id="form_update" action="" method="post" enctype="multipart/form-data" > 
+       <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab">
+          <tr align="center">
+            <td width="10%">颁布国家名称：</td>
+            <td width="20%" align="left"><input type="text" name="lc_name" id="lc_name" value="{$lawsinfo.lc_name}"/>
+            <input type="hidden" name="lc_id" id="lc_id" value="{$lawsinfo.lc_id}" />
+            </td> 
+          </tr>
+          <tr align="center">
+            <td width="10%">语言：</td>
+            <td width="20%" align="left">
+            <select name="lang" id="lang">
+            
+            	<option value="zh-cn" <if condition="$lawsinfo[lang]==zh-cn">selected</if> >简体中文</option>
+                <option value="zh-en" <if condition="$lawsinfo[lang]==zh-en">selected</if> >English</option>
+            </select>
+            </td> 
+          </tr>
+          
+          <tr align="center">
+            <td width="10%">标志图片：</td>
+            <td width="20%" align="left"><input type="file" name="lc_img" id="lc_img" />
+            <if condition="$lawsinfo['lc_img']!=''">
+            <img src="__ROOT__/Uploads/laws/{$lawsinfo.lc_img}" width="50" height="50" />
+            </if>
+            </td> 
+          </tr>
+          
+          <tr align="center">
+            <td colspan="2"><input type="submit" class="btn" value="提交" /> </td>
+          </tr>
+      </table>
+      </form>
+                </div>
+  </div>
+            </div>
+<div class="clear"></div>
+<include file="Common:foot" />
+</body>
+</html>

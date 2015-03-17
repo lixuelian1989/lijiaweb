@@ -1,0 +1,31 @@
+<div class="sidebar inner">
+    <include file="Common:ad" />
+    <div class="sb_nav">
+        <h3 class='title'>{$Think.lang.T_PRODUCT}</h3>
+        <div class="active" id="sidebar" data-csnow="44" data-class3="0" data-jsok="2">
+            <cat type="p" pid="0" >
+            <dl class="list-none navnow"><dt id='part_{$cid}'><a href='{:U("product/index",array("cid"=>$cid))}' title='{$name}' class="zm"><span>{$name}</span></a></dt></dl>
+            </cat>
+            <div class="clear"></div></div>
+    </div>
+
+    <div class="sb_box" style="min-height: 550px;">
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="Home">{$Think.lang.T_HOME}</a> &gt; <a href='{:U("product/index")}'>{$Think.lang.T_PRODUCT}</a></div>
+            <span>{$Think.lang.T_PRODUCT}</span>
+        </h3>
+        <div class="clear"></div>
+        <div class="active" id="productlist">
+            <ul class='list-none metlist'>
+                <volist name="list" id="vo">
+                <li class='list' style='width:172px; margin-left:5px; margin-right:5px;'><a href="{:U('product/read',array('id'=>$vo['id']))}" title='{$vo["title"]}' target='_self' class='img'><img src='__UPLOAD__/product/{$vo.image}' alt='{$vo["title"]}' title='{$vo["title"]}' width='160' height='130' /></a><h3><a href="{:U('product/read',array('id'=>$vo['id']))}" title='{$vo["title"]}' target='_self'>{$vo["title"]}</a></h3></li>
+                </volist>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div id="flip"><style>.digg4  { padding:3px; margin:3px; text-align:center; font-family:Tahoma, Arial, Helvetica, Sans-serif;  font-size: 12px;}.digg4  a { border:1px solid #ddd; padding:2px 5px 2px 5px; margin:2px; color:#aaa; text-decoration:none;}.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  span.current {border:1px solid #e0e0e0; padding:2px 5px 2px 5px; margin:2px; color:#aaa; background-color:#f0f0f0; text-decoration:none;}.digg4  span.disabled { border:1px solid #f3f3f3; padding:2px 5px 2px 5px; margin:2px; color:#ccc;} </style>
+            <div class='digg4'>{$page}</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

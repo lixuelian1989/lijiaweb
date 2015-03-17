@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+<css href="__ROOT__/Home/Tpl/default/Public/css/style.css"/>
+
+</head>
+
+<body>
+<include file='Common:header' />
+<div class="Head_nav">
+  <div class="M"> <a href="{:U('Index/index')}">首页</a> <a href="">我要卖车</a> <a href="">我要置换</a> <a href="{:U('news/index')}">84资讯</a> <a href="">84分享</a> <a href="">团新车</a> </div>
+</div>
+
+<div class="xieyi_zhuce_title">
+用户注册协议
+</div>
+<form action="{:U('User/regist')}" method="get" name="form1" id="form1">
+<div class="xieyi_zhuce_content">
+	{$info.content}
+</div>
+<div class="tongyi">
+	<input type="submit" name="sub" id="sub" value="同意" />
+</div>
+</form>
+<include file='Common:footer' />

@@ -1,0 +1,45 @@
+<div class="sidebar inner">
+    <div class="sb_nav">
+        <h3 class='title'>{$Think.lang.T_PRODUCT}</h3>
+        <div class="active" id="sidebar" data-csnow="42" data-class3="0" data-jsok="2">
+            <cat type="p">
+            <dl class="list-none navnow"><dt id='part{$cid}'><a href='{:U("product/index",array("cid"=>$cid))}'  title='{$name}' class="zm"><span>{$name}</span></a></dt></dl>
+            </cat>
+            <div class="clear"></div></div>
+    </div>
+    <div class="sb_box" >
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="{$Think.lang.T_HOME}">{$Think.lang.T_HOME}</a> &gt; <a href="{:U('product/index')}" >{$Think.lang.T_PRODUCT}</a>&gt; <a href="" >{$Think.lang.T_PRODUCT_CONTENT}</a></div>
+        </h3>
+        <div class="clear"></div>
+        <div class="editor active" id="showtext">
+            <div class="product_img">
+                <img src="__UPLOAD__/product/{$info.image}">
+            </div>
+            <div class="attr_text">
+                <dl>
+                    <dt>
+                        <dd><span class="pname">{$info.title}</span></dd>
+                    </dt>
+                    <dt>
+                    <dd>{$Think.lang.T_PRICE}：<span class="price">{$Think.lang.T_F}{$info.price}</span></dd>
+                    </dt>
+                    <dt>
+                    <dd>{$Think.lang.T_PSIZE}：<span class="psize">{$info.psize}</span></dd>
+                    </dt>
+                    <dt>
+                        <dd><span class="product_summary">{$info['summary']}</span></dd>
+                    </dt>
+                </dl>
+            </div>
+            <div class="clear"></div>
+            <div class="product_c">{$Think.lang.T_PRODUCT_CONTENT}</div>
+            <div class="product_content">
+                {$info['content']}
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

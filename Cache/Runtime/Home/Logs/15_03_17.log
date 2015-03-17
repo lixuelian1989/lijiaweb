@@ -1,0 +1,363 @@
+[ 2015-03-17T07:02:05+08:00 ] 66.249.65.185 /index.php/page/index/name/lianxiwomen
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `lj_page` [ RunTime:0.000771s ]
+SQL: SELECT * FROM `lj_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'lianxiwomen' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT `unique_id`,`page_name` FROM `lj_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'lianxiwomen' ) AND ( `display` = 1 ) ORDER BY id DESC  [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `lj_ad` [ RunTime:0.000442s ]
+SQL: SELECT * FROM `lj_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'lianxiwomen') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000209s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007694s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000214s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000221s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000134s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000346s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-03-17T07:02:22+08:00 ] 66.249.65.189 /index.php/user/xieyi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000471s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `lj_page` [ RunTime:0.000773s ]
+SQL: SELECT * FROM `lj_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'xieyi' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006644s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000221s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000264s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-03-17T07:18:28+08:00 ] 66.249.65.185 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `lj_ad` [ RunTime:0.000685s ]
+SQL: SELECT * FROM `lj_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 5 行.
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010523s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000282s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000258s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000141s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2015-03-17T08:50:09+08:00 ] 124.64.126.104 /index.php/index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000494s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `lj_ad` [ RunTime:0.000719s ]
+SQL: SELECT * FROM `lj_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 5 行.
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010977s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000289s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000134s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-03-17T08:50:19+08:00 ] 124.64.126.104 /index.php/member/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000470s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000323s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004901s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000222s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000231s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-03-17T08:50:20+08:00 ] 111.206.36.12 /index.php/member/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000474s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004751s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000233s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000342s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-03-17T08:50:47+08:00 ] 124.64.126.104 /index.php/index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000305s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `lj_ad` [ RunTime:0.000838s ]
+SQL: SELECT * FROM `lj_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 5 行.
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010303s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000271s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000128s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-03-17T08:50:49+08:00 ] 124.64.126.104 /index.php/member/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000512s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004855s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000193s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000233s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000154s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-03-17T08:51:03+08:00 ] 124.64.126.104 /index.php/member/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `lj_member` [ RunTime:0.001121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lj_member` WHERE ( `username` = '李素素' ) LIMIT 1   [ RunTime:0.000187s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' /mnt/lijiaweb/Cache/Runtime/Home/Cache/224a660b6f26dc9756006f74fee09fe5.php 第 64 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005248s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000234s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000215s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000131s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000950s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000396s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2015-03-17T08:51:12+08:00 ] 124.64.126.104 /index.php/member/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004864s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000220s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000230s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000131s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-03-17T08:51:21+08:00 ] 124.64.126.104 /index.php/member/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `lj_member` [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `lj_member` [ RunTime:0.000622s ]
+SQL: SELECT `uid`,`pwd`,`username` FROM `lj_member` WHERE ( username='李素素' or email='李素素' or phone='李素素' ) LIMIT 1   [ RunTime:0.000206s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' /mnt/lijiaweb/Cache/Runtime/Home/Cache/224a660b6f26dc9756006f74fee09fe5.php 第 64 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005184s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000215s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000209s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-03-17T08:51:22+08:00 ] 124.64.126.104 /index.php/member/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000550s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004884s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000285s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000209s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000132s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000373s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-03-17T08:51:25+08:00 ] 124.64.126.104 /index.php/member/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000470s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' /mnt/lijiaweb/Cache/Runtime/Home/Cache/224a660b6f26dc9756006f74fee09fe5.php 第 64 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005030s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000300s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000141s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-03-17T08:51:26+08:00 ] 111.206.36.15 /index.php/member/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' /mnt/lijiaweb/Cache/Runtime/Home/Cache/224a660b6f26dc9756006f74fee09fe5.php 第 64 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005205s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000192s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000405s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000423s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-03-17T09:27:59+08:00 ] 115.236.153.102 /index.php/index/index2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-03-17T09:34:24+08:00 ] 124.64.126.104 /index.php/index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000481s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `lj_ad` [ RunTime:0.000796s ]
+SQL: SELECT * FROM `lj_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 5 行.
+NOTIC: [8] Undefined variable: info /mnt/lijiaweb/Cache/Runtime/Home/Cache/71191d06e3a1515d6f2539df23c89c2b.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010518s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000260s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000274s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2015-03-17T10:05:35+08:00 ] 124.64.126.104 /index.php/index/%E9%85%92%E5%BA%97%E4%BD%8F%E5%AE%BF.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000462s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+

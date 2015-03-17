@@ -1,0 +1,44 @@
+<div id="header">
+    <!--TOP START-->
+    <div id="top">
+        <div class="logo l"><a href="index.html" title="ABC Products"><img src="__UPLOAD__/image/images/logo.png" style="height: 57px; width: 87px;"  alt="logo" /></a></div>
+        <div class="search-or-call r">
+            <div>
+                <php>if($site['SITE_INFO']['LANG_SWITCH_ON']){</php>
+                [<a href="__ACTION__?l=zh-cn" style='cursor:pointer;' title='简体中文'>简体中文</a>]
+                [<a href="__ACTION__?l=zh-en" style='cursor:pointer;' title='English'>English</a>]
+                <php>}</php>
+            </div>
+            <!--Search box for optional<div class="sbox l"><input name="search" type="text" class="searchbox" /></div>
+            <div class="sbtn l"><input name="searchbtn" type="image" src="images/searchbtn.png"  /></div>
+            <div class="c"></div>-->
+        </div>
+        <div class="c"></div>
+    </div>
+    <!--TOP END-->
+    <!--NAV START-->
+    <php>//echo MODULE_NAME;</php>
+    <div id="nav">
+        <ul>
+            <li><a title="{$Think.lang.T_HOME}" href="__APP__" <php>if('index'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_HOME}</a></li>
+            <li   ><a href="{:U('about/index')}" title='{$Think.lang.T_ABOUT}' <php>if('about'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_ABOUT}</a></li>
+            <li   ><a href="{:U('product/index')}" title='{$Think.lang.T_PRODUCT}' <php>if('product'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_PRODUCT}</a></li>
+            <li   ><a href="{:U('message/index')}" title='{$Think.lang.T_MESSAGE}' <php>if('message'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_MESSAGE}</a></li>
+            <li   ><a href="{:U('contact/index')}" title='{$Think.lang.T_CONTACT}' <php>if('contact'==strtolower(MODULE_NAME)){</php>class='active'<php>}</php>>{$Think.lang.T_CONTACT}</a></li>
+
+        </ul>
+        <div class="c"></div>
+    </div>
+    <!--NAV END-->
+</div>
+<!--SLIDER START-->
+<div id="slider_container">
+    <div class="theme-default">
+        <div id="slider" class="nivoSlider">
+            <volist name="adlist" id="vo">
+            <img src="__UPLOAD__/pictures/{$vo.ad_img}" alt="" width="310" height="190"/>
+            </volist>
+        </div>
+    </div>
+</div>
+<!--SLIDER START-->

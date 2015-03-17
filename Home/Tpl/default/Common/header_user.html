@@ -1,0 +1,27 @@
+
+<div class="topnav">
+<if condition="$uinfo">
+{$uinfo.uname}欢迎您,登陆 法规系统 &nbsp;|&nbsp;<a href="{:U('User/info')}">个人中心</a>&nbsp;|&nbsp;
+<a href="{:U('User/loginOut')}">退出</a>
+<else />
+<a href="{:U('User/index')}">登陆</a>&nbsp;|&nbsp;<a href="{:U('User/regist')}">注册</a>
+
+</if>
+
+&nbsp;|&nbsp;<a href="?l=zh-cn">中文</a>&nbsp;|&nbsp;<a href="?l=zh-en">英文</a></div>
+<div class="top">
+	<div class="logobox l"><a href="{:U('index/index')}"><img src="__ROOT__/Home/Tpl/default/Public/images/logo.png" /></a></div>	
+    <div class="navbox r" style=" width:719px;">
+    	<ul>
+        	<li><p><a href="{:U('index/index')}">首页</a></p></li>
+            <li><p><a href="">最近更新  </a></p></li>
+            <li><p><a href="">收藏夹</a></p></li>
+            <li><p><a href="">搜索</a></p></li>
+            <li><p><a href="">帮助</a></p></li>
+            <li><p><a href="">帮助</a></p></li>
+            <li><p><a href="">个人中心</a></p></li>
+           
+        </ul>
+    </div>
+    <div class="cl"></div>
+</div>

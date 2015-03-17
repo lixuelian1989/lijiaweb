@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>法规管理-{$site.SITE_INFO.name}</title>
+        <php>
+            $addCss="";
+            $addJs="";
+            $currentNav ='法规管理 > 法规列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">法规列表</div>
+                        
+                        <div class="current"><a href="{:U('laws/add')}">发布新法规</a></div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                        <thead>
+                            <tr>
+                                <td>法规标题</td>
+                                <td>所在分类</td>
+                                <td>发布时间</td>
+                                <td>发布人</td>
+                                <td>状态</td>
+                                
+                                <td width="150">操作</td>
+                            </tr>
+                        </thead>
+                        <volist name="list" id="vo">
+                            <tr align="center" id="{$vo.id}">
+                                <td align="left"><img src="__PUBLIC__/Img/{$vo.lang}.png"><a href="__URL__/edit?id={$vo.l_id}">{$vo.l_title}</a></td>
+                                <td>{$vo.lt_name}</td>
+                                <td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+                                <td>{$vo.aidName}</td>
+                                <td><a href="javascript:void(0);" onclick="changeStatus({$vo.l_id},this)">{$vo.status}</a></td>
+                                
+                                <td>[ <a href="__URL__/edit?id={$vo.l_id}">编辑 </a> ] [ <a link="{:U('Laws/del/',array('l_id'=>$vo['l_id']))}" href="javascript:void(0)" name="{$vo.l_title}" class="del">删除 </a> ]</td>
+                            </tr>
+                        </volist>
+                        <tr><td colspan="7" align="right">{$page}</td></td></tr>
+                        <tr><td colspan="7" align="left">
+                            <form action="__SELF__" method="get">
+                            标题：<input type="text" name="title" value="<php>echo $_GET['title'];</php>" size="30" style="margin-right: 20px;">
+                           
+                           		<select name="lt_id" id="lt_id">
+                                	<option value="">请选择法规类型</option>
+                                    <volist id='vo' name='lt_list'>
+                                    <option value="{$vo.lt_id}">{$vo.lt_name}</option>
+                                    </volist>
+                                </select>
+                                <select name="l_country_id" id="l_country_id">
+                                	<option value="">请选择法规颁布国家</option>
+                                    <volist id='vo' name='lc_list'>
+                                    <option value="{$vo.lc_id}">{$vo.lc_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="module_id" id="module_id">
+                                	<option value="">请选择车型</option>
+                                    <volist id='vo' name='lm_list'>
+                                    <option value="{$vo.lm_id}">{$vo.lm_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="lt_status" id="lt_status">
+                                	<option value="">请选择法规状态</option>
+                                    <option value="1">生效</option>
+                                    <option value="2">草案</option>
+                                    
+                                </select>
+                                 
+
+                            <input type="submit" value="搜索">
+
+                            </form>
+                        </td></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".del").click(function(){
+                    var delLink=$(this).attr("link"),
+                        $this = $(this);
+                    popup.confirm('你真的打算删除【<b>'+$(this).attr("name")+'</b>】吗?','温馨提示',function(action){
+                        if(action == 'ok'){
+                            delByLink(delLink,$this);
+                        }
+                    });
+                    return false;
+                });
+            });
+            function changeAttr(id,v){
+                $.get('{:U("News/changeAttr")}?id='+id,function(data){
+                    if(data.status==1){
+                        $(v).html(data.info);
+                    }
+                });
+            }
+            function changeStatus(id,v){
+                $.get('{:U("Laws/changeStatus")}?id='+id,function(data){
+                    if(data.status==1){
+                        $(v).html(data.info);
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

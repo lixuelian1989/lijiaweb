@@ -1,0 +1,54 @@
+<include file="Common:minheader" />
+
+<div class="main_box">
+     <div class="zhaohui">
+
+      <h2 class="tit">找回密码</h2>
+      <div>
+      	<ul class="step">
+       	  <li>填写账户名</li>
+        	<li class=""> 验证身份</li>
+        	<li class="mohter"> 设置新密码</li>
+        	<li class="four2 cur"> 完成 </li>
+        </ul>
+        <div class="xxbox">
+        	<div class="loginbox2">
+              <div class="okk">新密码设置成功！请牢记您新设置的密码!</div>
+              <div class="banks"><a href="{:U('Index/index')}">返回首页</a></div> 
+        </div>
+        </div>
+      </div>
+      <div class="cl"></div>
+      </div>
+      
+    </div>
+
+<include file="Common:minfooter" />
+    <script type="text/javascript">
+        $(function(){
+            $(".findPwd").click(function(){
+//                $("#op_type").val("2");
+//                if($("#email").val()==''){
+//                    popup.alert("填写了你的邮箱/用户名/手机方可找回密码");
+//                    return false;
+//                }
+//                if($("#verify_code").val()==''){
+//                    popup.alert("请写验证码方可找回密码");
+//                    return false;
+//                }
+                commonAjaxSubmit();
+            });
+        });
+     function selectVerifyType(){
+	var type = $("#type").val();
+	if(type == "mobile"){
+		$(".mobileDiv").show();
+		$(".emailDiv").hide();
+	}else if(type == "email"){
+		$(".mobileDiv").hide();
+		$(".emailDiv").show();
+	}
+     }   
+        
+        
+    </script>

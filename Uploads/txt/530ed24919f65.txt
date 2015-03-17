@@ -1,0 +1,251 @@
+2013年 6月大学英语四级考试真题 （标准卷）
+Total score: 710        
+Total time allowed: 125 minutes 
+[特注： 2013年 6月大学四级考试采用多题多卷形式，本试卷含两套写作题，考生可以任选其一。 ]
+
+[w]
+{title} Part I Writing  (多题多卷写作题 1) (30 minutes) （20 score）
+{directions} Directions: For this part, you are allowed 30 minutes to write a short essay. You should start your essay with a brief description of the picture and then express your views on the importance of doing small things before undertaking something big. You should write at least 120 words but no more than 180 words. 
+{url} http://www.baidu.com/ 
+[/w]
+[w]
+{title} Part I Writing (多题多卷写作题 2) (30 minutes) （10 score）
+{directions} Directions: For this part, you are allowed 30 minutes to write a short essay. You should start your essay with a brief description of the picture and then express your views on the importance of reading literature. You should write at least 120 words but no more than 180 words. 
+{url} http://www.baidu.com/
+[/w]
+
+[easy_r]
+{title} Part II Reading Comprehension (Skimming and Scanning) (15 minutes) (30 score)
+{section}
+{s_directions}
+{directions} Directions: In this part, you will have 15 minutes to go over the passage quickly and answer the questions on Answer Sheet 1. For questions 1-7, choose the best answer from the four choices marked A), B), C) and D). For questions 8-10, complete the sentences with the information given in the passage. 
+{passage}
+{content}<b>Can Digital Textbook Truly Replace the Print Kind?</b>
+{content}　　The shortcomings of traditional print edition textbooks are obvious: For starters they’re heavy, with the average physics textbook weighing 3.6 pounds. They’re also expensive, especially when you factor in the average college student’s limited budget, typically costing hundreds of dollars every semester. 
+{content}　　But the worst part is that print version of textbooks are constantly undergoing revisions. Many professors require that their students use only the latest versions in the classroom, essentially rendering older texts unusable. For students, it means they’re basically stuck with a four pound paper-weight that they can’t sell back. 
+{content}　　Which is why digital textbooks, if they live up to their promise, could help ease many of these shortcomings. But till now, they’ve been something like a mirage（幻影）in the distance, more like a hazy（模糊的）dream than an actual reality. Imagine the promise: Carrying all your textbooks in a 1.3 pound iPad? It sounds almost too good to be true. 
+{content}　　But there are a few pilot schools already making the transition（过渡）over to digital books. Universities like Cornell and Brown have jumped onboard. And one medical program at the University of California, Irvine, gave their entire class iPads with which to download textbooks just last year. 
+{content}　　But not all were eager to jump aboard. 
+{content}　　“People were tired of using the iPad textbook besides using it for reading,” says Kalpit Shah, who will be going into his second year at Irvine’s medical program this fall. “They weren’t using it as a source of communication because they couldn’t read or write in it. So a third of the people in my program were using the iPad in class to take notes, the other third were using laptops and the last third were using paper and pencil.” 
+{content}　　The reason it hasn’t caught on yet, he tells me, is that the functionality of e-edition textbooks is incredibly limited, and some students just aren’t motivated to learn new study behavior. 
+{content}　　But a new application called Inkling might change all that. The company just released an updated version last week, and it’ll be utilized in over 50 undergraduate and graduate classrooms this coming school year. 
+{content}　　“Digital textbooks are not going to catch on,” says Inkling CEO Matt Maclnnis as he’s giving me a demo（演示）over coffee. “What I mean by that is the current perspective of the digital textbook is it’s an exact copy of the print book. There’s Course Smart, etc., these guys who take any image of the page and put it on a screen. If that’s how we’re defining digital textbooks, there’s no hope of that becoming a mainstream product.” 
+{content}　　He calls Inkling a platform for publishers to build rich multimedia content from the ground up, with a heavy emphasis on real-world functionality. The traditional textbook merely serves as a skeleton. 
+{content}　　At first glance Inkling is an impressive experience. After swiping（敲击）into the iPad app (应用软件 ), which you can get for free here, he opens up a few different types of textbooks. 
+{content}　　Up first is a chemistry book. The boot time is pretty fast, and he navigates through (浏览 ) a few chapters before swiping into a fully rendered 3D molecule that can be spun around to view its various building blocks. “Publishers give us all of the source media, artwork, videos,” he says, “We help them think through how to actually build something for this platform.” 
+{content}　　Next he pulls up a music composition textbook, complete with playable demos. It’s a learning experience that attacks you from multiple sensory directions. It’s clear why this would be something a music major would love. 
+{content}　　But the most exciting part about Inkling, to me, is its notation（批注）system. Here’s how it works! 
+{content}　　When you purchase a used print book, it comes with its previous owner’s highlights and notes in the margins. It uses the experience of someone who already went through the class to help improve your reading (how much you trust each notation is obviously up to you). 
+{content}　　But with lnkling, you can highlight a piece of content and make notes. Here’s where things get interesting, though: If a particularly important passage is highlighted by multiple lnkling users, that information is stored on the cloud and is available for anyone reading the same textbook to come across. That means users have access to notes from not only their classmates and Facebook friends, but anyone who purchased the book across the country. The best comments are then sorted democratically by a voting system, meaning that your social learning experience is shared with the best and brightest thinkers. 
+{content}　　As a bonus, professors can even chime in (插话 ) on discussions. They’ll be able to answer the questions of students who are in their class directly via the interactive book. 
+{content}　　Of course, Inkling addresses several of the other shortcomings in traditional print as well. Textbook versions are constanly updated, motivating publishers by minimizing production costs (the big ones like McGraw-Hill are already onboard). Furthermore, students will be able to purchase sections of the text instead of buying the whole thing, with individual chapters costing as little as $2.99. 
+{content}　　There are, however, challenges. 
+{content}　　“It takes efforts to build each book,” Maclnnis tells me. And it’s clear why. 
+{content}　　Each interactive textbook is a media-heavy experience built from the ground up, and you can tell that it takes a respectable amount of manpower to put together each one. 
+{content}　　For now the app is also iPad-exclusive, and though a few of these educational institutions are giving the hardware away for free, for other students who don’t have such a luxury it’s an added layer of cost — and an expensive one at that. 
+{content}　　But this much is clear. The traditional textbook model is and has been broken for quite some time. Whether digitally interactive ones like Inkling actually take off or not remains to be seen, and we probably won’t have a definite answer for the next few years. 
+{content}　　However the solution to any problem begins with a step in a direction. And at least for now, that hazy mirage in the distance? A little more tangible (可触摸的 ), a little less of a dream. 
+{subject}1. The biggest problem with traditional print textbooks is that _____. 
+{Options}A) they are not reused once a new edition comes out 
+{Options}B) they cost hundreds of dollars every semester 
+{Options}C) they are too heavy to carry around 
+{Options}D) they take a longer time to revise 
+{subject}2. What does the author say about digital textbooks? 
+{Options}A) It’s not likely they will replace traditional textbooks.   
+{Options}B) They haven’t fixed all the shortcomings of print books. 
+{Options}C) Very few of them are available in the market. 
+{Options}D) Many people still have difficulty using them. 
+{subject}3. According to Kalpit Shah, some students still use paper and pencil because _____.      
+{Options}A) they find it troublesome to take notes with an iPad 
+{Options}B) they are unwilling to change their study behavior 
+{Options}C) they have get tired of reading on the iPad 
+{Options}D) they are not used to reading on the screen 
+{subject}4. Inkling CEO Matt Maclnnis explains that the problem with Course Smart’s current digital textbooks is that _____.          
+{Options}A) they have to be revised repeatedly 
+{Options}B) they are inconvenient to use in class 
+{Options}C) they are different from most mainstream products 
+{Options}D) they are no more than print versions put on a screen 
+{subject}5. Matt Maclnnis describes the updated version of lnkling as _____. 
+{Options}A) a good example of the mainstream products 
+{Options}B) a marvelous product of many creative ideas 
+{Options}C) a platform for building multimedia content 
+{Options}D) a mere skeleton of traditional textbooks 
+{subject}6. The author is most excited about lnkling’s notation system because one can _____.             
+{Options}A) share his learning experience with the best and brightest thinkers 
+{Options}B) participate in discussions with classmates and Facebook friends 
+{Options}C) vote for the best learners democratically 
+{Options}D) store information on the cloud 
+{subject}7. One additional advantage of the interactive digital textbook is that _____.  
+{Options}A) students can switch to different discussions at any point 
+{Options}B) students can download relevant critical comments 
+{Options}C) professors can join in students’ online discussions 
+{Options}D) professors can give prompt feedback to students’ homework 
+{subject}8. One of the challenges to build an interactive digital textbook from the ground up is that is takes a great deal of _____.  
+{Options}
+{subject}9. One problem for students to replace traditional textbooks with interactive digital ones is the high ______ of the hardware. 
+{Options}
+{subject}10. According to the author, whether digital textbooks will catch on still _____.  
+{Options}
+[/easy_r]
+
+[l]
+{title}Part III Listening Comprehension (35 minutes) 
+{directions}
+[section]
+ Section A 
+ Directions: In this section, you will hear 8 short conversations and 2 long conversations. At the end of each conversation, one or more questions will be asked about what was said. Both the conversation and the questions will be spoken only once. After each question there will be a pause. During the pause, you must read the four choices marked A), B), C) and D), and decide which is the best answer. Then mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[passage]
+ Questions 11 to 18 are based on the conversation you have just heard. 
+{subject}11.
+{Options}A) Children should be taught to be more careful. 
+{Options}B) Children shouldn’t drink so much orange juice.  
+{Options}C) There is no need for the man to make such a fuss. 
+{Options}D) Timmy should learn to do things in the right way. 
+{subject}12. 
+{Options}A) Fitness training.                  
+{Options}B) The new job offer.  
+{Options}C) Computer programming.           
+{Options}D) Directorship of the club.  
+{subject}13. 
+{Options}A) He needs to buy a new sweater.      
+{Options}B) He has got to save on fuel bills.  
+{Options}C) The fuel price has skyrocketed.      
+{Options}D) The heating system doesn’t work.  
+{subject}14. 
+{Options}A) Committing theft.                 
+{Options}B) Taking pictures.   
+{Options}C) Window shopping.                
+{Options}D) Posing for the camera.  
+{subject}15. 
+{Options}A) She is taking some medicine.        
+{Options}B) She has not seen a doctor yet.  
+{Options}C) She does not trust the man’s advice.  
+{Options}D) She has almost recovered from the cough.  
+{subject}16. 
+{Options}A) Pamela’s report is not finished as scheduled.  
+{Options}　　B) Pamela has a habit of doing things in a hurry.  
+{Options}　　C) Pamela is not good at writing research papers.  
+{Options}　　D) Pamela’s mistakes could have been avoided.  
+{subject}17. 
+{Options}A) In the left-luggage office.          
+{Options}B) At the hotel reception.  
+{Options}C) In a hotel room.                  
+{Options}D) At an airport.  
+{subject}18. 
+{Options}A) She was an excellent student at college.    
+{Options}B) She works in the entertainment business.  
+{Options}C) She is fond of telling stories in her speech.  
+{Options}D) She is good at conveying her message. 
+[/passage]
+[passage]
+Questions 19 to 21 are based on the conversation you have just heard. 
+{subject}19. 
+{Options}    A) Arranging the woman’s appointment with Mr. Romero. 
+{Options}　　B) Fixing the time for the designer’s latest fashion show. 
+{Options}　　C) Talking about an important gathering on Tuesday. 
+{Options}　　D) Preparing for the filming on Monday morning. 
+{subject}20. 
+{Options}    A) Her travel to Japan. 
+{Options}　　B) The awards ceremony. 
+{Options}　　C) The proper hairstyle for her new role. 
+{Options}　　D) When to start the makeup session. 
+{subject}21. 
+{Options}    A) He is Mr. Romero’s agent. 
+{Options}　　B) He is an entertainment journalist. 
+{Options}　　C) He is the woman’s assistant. 
+{Options}　　D) He is a famous movie star. 
+[/passage]
+[passage]
+ Questions 22 to 25 are based on the conversation you have just heard. 
+{subject}22. 
+{Options}    A) Make an appointment for an interview. 
+{Options}　　B) Send in an application letter. 
+{Options}　　C) Fill in an application form. 
+{Options}　　D) Make a brief self-introduction on the phone. 
+{subject}23. 
+{Options}    A) Someone having a college degree in advertising. 
+{Options}　　B) Someone experienced in business management. 
+{Options}　　C) Someone ready to take on more responsibilities. 
+{Options}　　D) Someone willing to work beyond regular hours. 
+{subject}24. 
+{Options}    A) Travel opportunities. 
+{Options}　　B) Handsome pay. 
+{Options}　　C) Prospects for promotion. 
+{Options}　　D) Flexible working hours. 
+{subject}25. 
+{Options}    A) It depends on the working hours. 
+{Options}　　B) It’s about 500 pound a week. 
+{Options}　　C) It will be set by the Human Resources. 
+{Options}　　D) It is to be negotiated. 
+[/passage]
+[/section] 
+[section] 
+Section B 
+Directions: In this section you will hear 3 short passages. At the end of each passage, you will hear some questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 2 with a single line through the centre. 
+[passage]
+Passage One 
+Questions 26 to 29 are based on the passage you have just heard. 
+26. A) To give customers a wider range of choices. 
+　　B) To make shoppers see as many items as possible. 
+　　C) To supply as many varieties of goods as it can. 
+　　D) To give space for more profitable products.  
+27. A) On the top shelves.  
+　　B) On the bottom shelves.  
+　　C) On easily accessible shelves.  
+　　D) On clearly marked shelves.  
+28. A) Many of them buy things on impulse.  
+　　B) A few of them are fathers with babies.  
+　　C) A majority of them are young couples.  
+　　D) Over 60% of them make shopping lists.  
+29. A) Sales assistants promoting high margin goods. 
+　　B) Sales assistants following customers around. 
+　　C) Customers competing for good bargains. 
+　　D) Customers losing all sense of time. 
+[/passage]
+[passage]
+Passage Two 
+Questions 30 to 32 are based on the passage you have just heard. 
+30. A) Teaching mathematics at a school. 
+　　B) Doing research in an institute. 
+　　C) Studying for a college degree. 
+　　D) Working in a high-tech company. 
+31. A) He studied the designs of various choices. 
+　　B) He did experiments to different materials. 
+　　C) He bought an alarm clock with a pig face. 
+　　D) He asked different people for their opinions. 
+
+32. A) Its automatic mechanism. 
+　　B) Its manufacturing pattern. 
+　　C) Its way of waking people up. 
+　　D) Its funny-looking pig face. 
+[/passage]
+[passage]
+Questions 33 to 35 are based on the passage you have just heard. 
+33. A) It’s often caused by a change of circumstances. 
+　　B) It usually doesn’t require any special attention. 
+　　C) It usually appears all of a sudden. 
+　　D) It usually lasts for several years. 
+34. A) They can’t mix well with others. 
+　　B) They emotionally receive their friends. 
+　　C) They depend severely on family members. 
+　　D) They share similar interests with friends. 
+35. A) They lack consistent support from peers. 
+　　B) They doubt their own popularity. 
+　　C) They were born psychologically weak. 
+　　D) They focus too much attention on themselves. 
+[/passage]
+[/section] 
+
+[section] 
+Section C 
+Directions: In this section, you will hear a passage three times. When the passage is read for the first time, you should listen carefully for its general idea. When the passage is read for the second time, you are required to fill in the blanks numbered from 36 to 43 with the exact words you have just heard. For blanks numbered from 44 to 46 you are required to fill in the missing information. For these blanks you can either use the exact words you have just heard or write down the main points in your own words. Finally when the passage is read for the third time, you should check what you have written. 
+　　
+There was a time when any personal information that was gathered about us was typed on a piece of paper and (36) ________ away in a file cabinet. It could remain there for years and, often (37) ________, never reach the outside world. 
+　　Things have done a complete about-face since then. (38) ________ for the change has been the astonishingly (39) ________ development in recent years of the computer. Today, any data that is 
+　　(40) ________ about us in one place or another — and for one reason or another — can be stored in a computer bank. It can then be easily passed to other computer banks. They are owned by (41) ________ and by private businesses and corporations, lending (42) ________, direct mailing and telemarketing firms, credit bureaus, credit card companies, and government (43) ________ at the local, state, and federal level. 
+　　A growing number of Americans are seeing the accumulation and distribution of computerized date as a frightening invasion of their privacy. (44) ___________ _________________________________________________________ as the computer becomes increasingly efficient, easier to operate, and less costly to purchase and maintain. In 1970, a national survey showed that (45) ___________________________________________________ _________________. Seven years later, 47 percent expressed the same worry. (46) ____________ ________________________________________________________. 
+
+[/section] 
+[/l]
+
+

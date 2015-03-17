@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+    <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+    <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+
+<link href="__ROOT__/Home/Tpl/default/Public/css/public.css" rel="stylesheet" />
+<link href="__ROOT__/Home/Tpl/default/Public/css/style.css" rel="stylesheet" />
+
+    
+</head>
+
+<body>
+<include file='Common:header' />
+<div class="Head_nav">
+    <div class="M">
+        <a href="{:U('Index/index')}">首页</a>
+        <a href="">我要卖车</a>
+        <a href="">我要置换</a>
+        <a href="{:U('news/index')}" class="active">84资讯</a>
+        <a href="">84分享</a>
+        <a href="">团新车</a>
+    </div>
+</div>
+
+
+<div class="Head_nav_xia">
+	<a href="{:U('News/index')}">84资讯  ></a> <a href="#">{$catname}</a>
+</div>
+
+<div class="Kong"></div>
+<div class="M Replacement_advertis">
+	<img src="__ROOT__/Home/Tpl/default/Public/images/zc_img17.jpg" />
+</div>
+<div class="Kong"></div>
+
+
+<div class="M Replacement_one">
+	<h2><a href="#">亲，想了解更多资讯吗？</a></h2>
+</div>
+
+<volist id="vo" name="list">
+<div class="Informa_list">
+	<a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}"><img src="{$vo.imgsrc}" alt="{$vo.title}" width="996" height="259" /></a>
+    <a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}">{$vo.title|cn_substr=0,40}</a>
+    <p>
+    {$vo.summary|cn_substr=0,400}
+    <a href="{:U('News/read',array('id'=>$vo[id]))}" target="_blank" title="{$vo.title}"><查看></a></p>
+</div>
+</volist>
+
+<div class="page clearfix">
+    <!--<a href="#"><</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">...</a>
+    <a href="#">></a>-->
+    {$page}
+</div>
+
+
+
+<div class="M Replacement_advertis">
+	<img src="__ROOT__/Home/Tpl/default/Public/images/zc_img31.jpg" />
+</div>
+<div class="Kong"></div>
+<div class="Kong"></div>
+<div class="Kong"></div>
+
+
+
+
+
+
+
+<include file='Common:footer' />

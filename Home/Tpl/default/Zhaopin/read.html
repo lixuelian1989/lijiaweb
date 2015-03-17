@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+<css href="__ROOT__/Home/Tpl/default/Public/css/style.css"/>
+</head>
+
+<body>
+<include file='Common:header' />
+<div class="Head_nav">
+  <div class="M"> <a href="{:U('Index/index')}">首页</a> <a href="">我要卖车</a> <a href="">我要置换</a> <a href="{:U('news/index')}" class="active">84资讯</a> <a href="">84分享</a> <a href="">团新车</a> </div>
+</div>
+<div class="Kong"></div>
+<div class="zhaopin_maintitle">84招聘</div>
+
+
+<div class="zhaopin_main">
+  <div class="zhaopin_left">
+    <ul>
+      <li><a href="{:U('Page/index',array('name'=>'lianxiwomen'))}">联系我们</a></li>
+      <li><a href="{:U('Page/index',array('name'=>'hezuofangshi'))}">合作方式</a></li>
+      <li class="hover"><a href="{:U('Zhaopin/index')}">84招聘</a></li>
+    </ul>
+  </div>
+  <div class="zhaopin_right">
+    <div class="zp">
+      <div class="zp_title">{$info.name}</div>
+      <div class="zp_zppeo">招聘人数：{$info.peonum}</div>
+      <div class="zp_zppeo">工作地点：{$info.address}</div>
+      <div class="zp_zppeo">发布时间：{$info.adddate}</div>
+      <div class="clear"></div>
+    </div>
+    <div class="zp_list">
+    	<div class="title">职位描述</div>
+        <div class="content">{$info.miaoshu}</div>
+    </div>
+    
+    <div class="zp_list">
+    	<div class="title">任职要求</div>
+        <div class="content">{$info.yaoqiu}</div>
+    </div>
+    
+    
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="Kong"></div>
+<include file='Common:footer' /> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>后台管理地图-{$site.SITE_INFO.name}</title>
+        <php>
+            $addCss="";
+            $addJs="";
+            $currentNav ='网站管理 > 后台地图';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">网站地图</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                        <volist name="admin_big_menu" id="vo" key="k">
+                               <tr>
+                                   <td width="50">{$vo}</td>
+                                   <td>
+                                       <php>$sub_menu=$admin_sub_menu[$key];$k=$key;</php>
+                                       <volist name="sub_menu" id="sub">
+                                            <span style="padding: 0 10px 0 10px;"><a href="__APP__/{$k}/{$key}">{$sub}</a></span>
+                                       </volist>
+                                   </td>
+                               </tr>
+                        </volist>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $.post("{:U('SysData/backup')}", { systemBackup: 1 },function(json){
+                    if(json.status==1){
+                        popup.success(json.info,"系统定期备份成功提醒");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

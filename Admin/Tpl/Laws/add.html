@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>添加、编辑法规-后台管理-{$site.SITE_INFO.name}</title>
+        <php>
+            $addCss="";
+            $addJs="";
+            $currentNav ='法规管理 > 添加编辑法规';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">添加编辑法规</div>
+                    </div>
+                    <form id="form1" name="form1" action="" enctype="multipart/form-data" method="post">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <php>if($site['SITE_INFO']['LANG_SWITCH_ON']=='1'){</php>
+                            <tr>
+                                <th>语言选择：</th>
+                                <td>
+                                    <select name="info[lang]">
+                                        <option value="zh-cn" <if condition="$info['lang'] eq 'zh-cn'">selected</if> >简体中文</option>
+                                        <option value="zh-en" <if condition="$info['lang'] eq 'zh-en'">selected</if> >English</option>
+
+                                    </select></td>
+                            </tr>
+                            <php>}</php>
+                            <tr>
+                                <th width="100">所属分类：</th>
+                                <td>
+                                <select name="info[lt_id]" id="lt_id">
+                                	<option value="">请选择法规类型</option>
+                                    <volist id='vo' name='lt_list'>
+                                    <option value="{$vo.lt_id}" <if condition="$vo[lt_id]==$info['lt_id']">selected</if>>{$vo.lt_name}</option>
+                                    </volist>
+                                </select>
+                                <select name="info[l_country_id]" id="l_country_id">
+                                	<option value="">请选择法规颁布国家</option>
+                                    <volist id='vo' name='lc_list'>
+                                    <option value="{$vo.lc_id}" <if condition="$vo[lc_id]==$info['l_country_id']">selected</if> >{$vo.lc_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="info[module_id]" id="module_id">
+                                	<option value="">请选择车型</option>
+                                    <volist id='vo' name='lm_list'>
+                                    <option value="{$vo.lm_id}" <if condition="$vo[lm_id]==$info['module_id']">selected</if> >{$vo.lm_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="info[lt_status]" id="lt_status">
+                                	<option value="">请选择法规状态</option>
+                                    <option value="1" <if condition="1==$info['lt_status']">selected</if>>生效</option>
+                                    <option value="2" <if condition="2==$info['lt_status']">selected</if>>草案</option>
+                                    
+                                </select>
+                                 
+                                为了方便搜索，请仔细选择分类
+                                </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th width="100">法规标题：</th>
+                                <td><input id="l_title" type="text" class="input" size="60" name="info[l_title]" value="{$info.l_title}"/> <a href="javascript:void(0)" id="checkNewsTitle">检测是否重复</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <th width="100">法规(英文)标题：</th>
+                                <td><input id="l_en_title" type="text" class="input" size="60" name="info[l_en_title]" value="{$info.l_en_title}"/> </td>
+                            </tr>
+                            <tr>
+                                <th width="100">法规关键字：</th>
+                                <td>
+<input id="l_keywords" type="text" class="input" size="60" name="info[l_keywords]" value="{$info.l_keywords}"/>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <th>适用范围：</th>
+                                <td>
+<input id="l_range" type="text" class="input" size="60" name="info[l_range]" value="{$info.l_range}"/>                                	 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>法规号：</th>
+                                <td><input type="text" class="input" size="60" name="info[l_number]" value="{$info.l_number}"/> </td>
+                            </tr>
+                            <tr>
+                                <th>系列：</th>
+                                <td><input type="text" class="input" size="60" name="info[l_series]" value="{$info.l_series}"/></td>
+                            </tr>
+                            
+                            <tr>
+                                <th>增补等级：</th>
+                                <td><input type="text" class="input" size="60" name="info[l_level]" value="{$info.l_level}"/></td>
+                            </tr>
+                            
+                            <tr>
+                                <th>页数：</th>
+                                <td><input type="text" class="input" size="60" name="info[l_sum]" value="{$info.l_sum}"/></td>
+                            </tr>
+                            <tr>
+                                <th>法规内容：</th>
+                                <td>
+                                <input id="l_pdf" type="file" name="l_pdf">
+                                (请上传pdf文件.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>封面图片：</th>
+                                <td>
+                                <input id="l_img" type="file" name="l_img">
+                                (请上传封面文件,图片格式为jpg,gif,png,jpeg)
+                                </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th>描述：</th>
+                                <td>
+									<textarea name="info[l_description]" cols="60" rows="20"  ></textarea>
+                              </td>
+                            </tr>
+                            
+                            
+                            
+                            
+                            <tr>
+                                <th>生效日期：</th>
+                                <td>
+                                	<select name="sx_year" id="sx_year" onchange="change_mounth()">
+                                    	<volist id="years" name='years'>
+                                    	<option value="{$years}" <if condition="$info['syear']==$years">selected</if> >{$years}</option>
+                                        </volist>
+                                    </select>
+                                    <select name="sx_months" id="sx_months" onchange="change_mounth()">
+                                    	<volist id="months" name='months'>
+                                    	<option value="{$months}" <if condition="$info['smonth']==$months">selected</if> >{$months}</option>
+                                        </volist>
+                                    </select>	
+                                    
+                                    <select name="sx_day" id="sx_day">
+                                    	<volist id="days" name='days'>
+                                    	<option value="{$days}" <if condition="$info['sday']==$days">selected</if> >{$days}</option>
+                                        </volist>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>修订历史：
+                                <br/>（生成）</th>
+                                <td>
+                               
+                                <select id="parent_id" name="info[parent_id]">
+                                	<option value="">请按照下面的条件检索来获取对应的历史法规</option>
+                                </select>
+                                <input type="text"  id="history_name" size="100" class="input" name="info[history_name]" value=""/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>替换：</th>
+                                <td>
+                                <select name="l_t" id="l_t">
+                                	<option value="">请选择法规类型</option>
+                                    <volist id='vo' name='lt_list'>
+                                    <option value="{$vo.lt_id}">{$vo.lt_name}</option>
+                                    </volist>
+                                </select>
+                                <select name="l_c" id="l_c">
+                                	<option value="">请选择法规颁布国家</option>
+                                    <volist id='vo' name='lc_list'>
+                                    <option value="{$vo.lc_id}">{$vo.lc_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="l_m" id="l_m">
+                                	<option value="">请选择车型</option>
+                                    <volist id='vo' name='lm_list'>
+                                    <option value="{$vo.lm_id}">{$vo.lm_name}</option>
+                                    </volist>
+                                    
+                                </select>
+                                <select name="l_s" id="l_s">
+                                	<option value="">请选择法规状态</option>
+                                    <option value="1">生效</option>
+                                    <option value="2">草案</option>
+                                    
+                                </select>
+                                <input type="button" name="jiansuo" id="jiansuo" value="检索" onclick="search_laws()" />
+                                
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <php>if(empty($_GET['do'])){</php>
+                        <input type="hidden" name="info[l_id]" value="{$info.l_id}" />
+                        <php>}else{
+                            $action_url=__URL__.'/add';
+                            }</php>
+						<div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>                            
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/ueditor/ueditor.config.js,__PUBLIC__/ueditor/ueditor.all.min.js"/>
+        <script type="text/javascript">
+            UE.getEditor('content')
+        </script>
+        <script type="text/javascript">
+            $(function(){
+                $("#checkNewsTitle").click(function(){
+                    if($('#l_title').val()==''){
+                        popup.error('标题不能为空！');
+                        return false;
+                    }
+                    $.getJSON("__URL__/checkNewsTitle", { title:$("#l_title").val(),id:"{$info.l_id}"}, function(json){
+                        $("#checkNewsTitle").css("color",json.status==1?"#0f0":"#f00").html(json.info);
+                    });
+                });
+                $(".submit").click(function(){
+                    if($('#l_title').val()==''){
+                        popup.error('标题不能为空！');
+                        return false;
+                    }
+					return true;
+                   /*commonAjaxSubmit("{$action_url}");
+                    return false;*/
+                });
+            });
+			/*改变月份*/
+			function change_mounth(){
+				var sx_year=$("#sx_year").val();
+				var sx_months=$("#sx_months").val();
+				$("#sx_day").empty();
+				var days='';
+				var sxqy=sx_year%4;
+				if(sx_months==2&&sxqy==0){
+					k=29;
+				}else{
+					k=28;
+				}
+				
+				if(sx_months==1||sx_months==3||sx_months==5||sx_months==7||sx_months==8||sx_months==10||sx_months==12){
+					k=31;
+				}
+				
+				if(sx_months==4||sx_months==6||sx_months==9||sx_months==11){
+					k=30;
+				}
+				
+				for(i=1;i<=k;i++){
+					if(i<10)
+					days+='<option value="0'+i+'">0'+i+'</option>';
+					else
+					days+='<option value="'+i+'">'+i+'</option>';
+				}
+				
+				$("#sx_day").append(days);
+			}
+			function search_laws(){
+				var lt_id=$("#l_t").val();
+				var l_country_id=$('#l_c').val();
+				var module_id=$("#l_m").val();
+				var lt_status=$("#l_s").val();
+
+				//alert(document.getElementById("lt_id").value);
+				
+				$.getJSON("{:U('laws/ajaxget_title')}",{lt_id:lt_id,l_country_id:l_country_id,module_id:module_id,lt_status:lt_status},function(json){
+					var parent_str="";
+					$.each(json,function(i,item){
+						
+						parent_str+='<option value="'+item.l_id+'">'+item.l_title+'</option>';
+						
+						
+						});
+					
+					$("#parent_id").empty();
+					$("#parent_id").append(parent_str);
+					var first_title='第'+json[0].l_number+'号法规.Regulation NO'+json[0].l_number+'.'+json[0].l_series+'系列'+json[0].l_title+' 实际生效日期'+json[0].l_effect_time;
+					$("#history_name").val(first_title);
+					});
+				
+			}
+        </script>
+    </body>
+</html>

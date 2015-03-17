@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$webtitle}-{$site.SITE_INFO.name}</title>
+<meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+<meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.8.3.min.js"></script>
+</head>
+<style>
+.left {
+	float: left;
+	width: 300px;
+}
+.right {
+	float: left;
+	border: 1px solid #CCC;
+	width: 800px;
+}
+/*弹出框的样式*/
+#screen_user {
+	background: #CCC;
+	filter: alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+	opacity: 0.5;/*其他，透明度50%*/
+}
+.avatar_main {
+	background: #fff;
+	width: 752px;
+	height: 252px;
+}
+.avatar_main .Sell_close {
+	width: 100%;
+	background: #999;
+	height: 32px;
+	line-height: 32px;
+}
+.avatar_main .Sell_close h3 {
+	width: 727px;
+	float: left;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	padding-left: 5px;
+}
+.avatar_main .Sell_close a {
+	width: 20px;
+	float: left;
+	height: 32px;
+}
+.avatar_main .Login_table {
+	width: 100%;
+	height: 220px;
+}
+.avatar_main .Login_table .main_left {
+	width: 50%;
+	height: 220px;
+	float: left;
+}
+.avatar_main .Login_table .main_left .top {
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: #666 2px solid;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+.avatar_main .Login_table .main_left .main {
+	width: 80%;
+	padding-left: 5px;
+}
+.avatar_main .Login_table .main_left .main .border_avatar {
+	width: 100px;
+	padding: 5px;
+	height: 100px;
+	border: #CCC 1px solid;
+}
+.avatar_main .Login_table .main_right {
+	width: 50%;
+	height: 220px;
+	float: left;
+}
+
+.avatar_main .Login_table .main_right .top {
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: #666 2px solid;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+.avatar_main .Login_table .main_right .main {
+	width: 80%;
+	padding-left: 5px;
+}
+.avatar_main .Login_table .main_right .main .beizhu{
+	color:#999;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+}
+.avatar_main .Login_table .main_right .main .upload_div{ margin:10px 0;}
+.avatar_main .Login_table .main_right .main .upload_but{ margin-top:10px;}
+.avatar_main .Login_table .main_right .main #sub{
+	background:#F63 ;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	height:25px;
+	line-height:25px;
+	width:107px;
+	border:none;
+}
+
+</style>
+<body>
+<div class="left"> <a href="{:U('User/logout')}">退出</a>
+  <ul>
+    <volist id="vo" name="menu">
+      <li> <a href="{$vo.url}">{$vo.name}</a></li>
+    </volist>
+  </ul>
+</div>
+<div class="right">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><img src="{$user_info[avatar]}" width="100" height="100" /></td>
+      <td><a href="#" class="upload_avatar">更改头像</a></td>
+    </tr>
+  </table>
+  <form name="form1" method="post" action="" >
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>真实姓名：</td>
+        <td><input type="text" name="info[truename]" id="truename" value="{$user_info.truename}"></td>
+      </tr>
+      <tr>
+        <td>性别：</td>
+        <td><select name="info[sex]">
+            <option value="1"  
+            
+            <if condition="$user_info[sex]==1">selected</if>
+            >男
+            
+            </option>
+            <option value="0" 
+            
+            <if condition="$user_info[sex]==0">selected</if>
+            >女
+            
+            </option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>生日：</td>
+        <td><select name="byear" id="byear">
+            <volist id="vo" name="birthday[byear]"> <option value="{$vo}" 
+              
+              <if condition="$vo==$birthday_y"> selected</if>
+              >{$vo}
+              
+              </option>
+            </volist>
+          </select>
+          <select name="bmonth" id="bmonth" onChange="get_day(this.value)">
+            <volist id="vo" name="birthday[bmonth]"> <option value="{$vo}" 
+              
+              <if condition="$vo==$birthday_m"> selected</if>
+              >{$vo}
+              
+              </option>
+            </volist>
+          </select>
+          <select name="bday" id="bday">
+            <volist id="vo" name="birthday[bday_31]"> <option value="{$vo}"  
+              
+              <if condition="$vo==$birthday_d"> selected</if>
+              >{$vo}
+              
+              </option>
+            </volist>
+          </select></td>
+      </tr>
+      <tr>
+        <td>现居地址：</td>
+        <td><input type="text" name="info[address]" id="info[address]" value="{$user_info.address}"></td>
+      </tr>
+      <tr>
+        <td>E-mail：</td>
+        <td><input type="text" name="info[email]" id="info[email]" value="{$user_info.email}"></td>
+      </tr>
+      <tr>
+        <td>QQ：</td>
+        <td><input type="text" name="info[qq]" id="info[qq]" value="{$user_info.qq}"></td>
+      </tr>
+      <tr>
+        <td>电话：</td>
+        <td><input type="text" name="info[phone]" id="info[phone]" value="{$user_info.phone}"></td>
+      </tr>
+      <tr>
+        <td>通讯地址：
+          <input type="text" name="info[txaddress]" id="info[txaddress]" value="{$user_info.txaddress}"></td>
+        <td>邮编：
+          <input type="text" name="info[youbian]" id="info[youbian]" value="{$user_info.youbian}"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="button" id="button" value="提交"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/birthday.js"></script> 
+<script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/avatar.js"></script>
+<div id="screen_user"></div>
+<!--screen end-->
+<div style="position: absolute; top:50%; left:50%; display: none;" class="avatar_main">
+  <div class="Sell_close">
+    <h3>更改头像</h3>
+    <a href="javascript:close_avatar();" ><img src="__ROOT__/Home/Tpl/default/Public/images/zc_img16.jpg" /></a></div>
+  <div class="Login_table">
+    <form name="form1" id="form1" enctype="multipart/form-data" method="post" action="{:U('User/update_avatar')}">
+      <div class="main_left">
+        <div class="top">当前头像</div>
+        <div class="main">
+          <div class="border_avatar"> <img src="{$user_info[avatar]}" width="100" height="100" /> </div>
+        </div>
+      </div>
+      <div class="main_right">
+      	<div class="top">更换头像</div>
+      	<div class="main">
+        	<div class="beizhu">请选择新的照片，文件大小需小于2M</div>
+        	<div class="upload_div"><input type="file" name="avatar_img" /></div>
+            <div class="upload_but"><input type="submit" name="sub" id="sub" value=" 上  传 "/></div>
+             
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--popbox end-->
+
+</body>
+</html>

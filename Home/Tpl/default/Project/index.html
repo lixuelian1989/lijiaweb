@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$webtitle}-{$site.SITE_INFO.name}</title>
+    <meta name="keywords" content="<php>if($info['keywords']){</php>{$info['keywords']}<php>}else{</php>{$webtitle},{$site.SITE_INFO.keyword}<php>}</php>">
+    <meta name="description" content="<php>if($info['description']){</php>{$info['description']}<php>}else{</php>{$webtitle}-{$site.SITE_INFO.description}<php>}</php>">
+    <css href="__ROOT__/Home/Tpl/default/Public/css/public.css"/>
+</head>
+<style type="text/css">
+body{ background:url(__ROOT__/Home/Tpl/default/Public/images/bg2_01.jpg) no-repeat top center}
+</style>
+<body>
+<include file='Common:header_login' />
+<div class="dlbg">
+  <div class="dltit">项目管理系统</div>
+    <div class="dlck">
+    	<div class="yhm">
+        	<input class="yhtext" type="text" placeholder="用户名" />
+             <div class="yhm_tb"></div>
+        </div>
+      <div class="yhm">
+          <input class="yhtext" type="text" placeholder="密码" />
+          <div class="yhm_tb mm"></div>
+      </div>
+      <div class="yzm"><input type="text" /><img src="__ROOT__/Home/Tpl/default/Public/images/bt_08.jpg" /><a href="#">换一张</a></div>
+      <div class="dlbt">
+      	<input type="button" value="登录" /><a href="#">注册</a>
+      </div>
+      
+    </div>
+	
+</div>
+<include file='Common:footer_in' />

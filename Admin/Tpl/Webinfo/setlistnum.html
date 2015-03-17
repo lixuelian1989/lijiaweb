@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>显示条数配置-系统设置-{$site.SITE_INFO.name}</title>
+    <php>$addCss="";</php>
+    <php>$addJs="";</php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+<div class="wrap"> <include file="Common:head" />
+    <js  href="__PUBLIC__/Js/jquery-ui.min.js" />
+    <js  href="__PUBLIC__/Js/evol.colorpicker.min.js" />
+    <css  href="__PUBLIC__/Css/jquery-ui.css" />
+    <css  href="__PUBLIC__/Css/evol.colorpicker.css" />
+    <div class="mainBody"> <include file="Common:left" />
+        <div id="Right">
+            <div class="contentArea">
+                <div class="Item hr">
+                    <div class="current">显示配置</div>
+                </div>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                        <tr>
+                            <th width="120">文章每页显示条数：</th>
+                            <td><input name="newslist" type="text" class="input" size="30" value="{$site.LISTNUM.newslist}" /></td>
+                        </tr>
+                        <tr>
+                        <th width="120">产品每页显示条数：</th>
+                        <td><input name="prolist" type="text" class="input" size="30" value="{$site.LISTNUM.prolist}" /></td>
+                        </tr>
+                        <tr>
+                            <th width="120">主题颜色：</th>
+                            <td><input id="noIndColor" class="input" name="tempcolor" size="20" value="{$site.LISTNUM.tempcolor}" /></td>
+                        </tr>
+                        <tr>
+                            <th width="120">选择主题：</th>
+                            <td><input  class="input" name="DEFAULT_THEME" size="20" value="{$site.LISTNUM.DEFAULT_THEME}" />默认模版：default</td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="commonBtnArea" >
+                    <button class="btn submit">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function(){
+        // No color indicator
+        $('#noIndColor').colorpicker({
+            displayIndicator: false
+        });
+    });
+
+</script>
+<div class="clear"></div>
+<include file="Common:foot" />
+<script type="text/javascript">
+    $(".submit").click(function(){
+        commonAjaxSubmit();
+    });
+</script>
+</body>
+</html>

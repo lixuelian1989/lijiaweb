@@ -1,0 +1,89 @@
+<include file="Common:minheader" />
+
+
+ <div class="main_box">
+     <div class="zhaohui">
+
+      <h2 class="tit">找回密码</h2>
+      <div>
+      	<ul class="step">
+       	  <li class=" cur">填写账户名</li>
+        	<li> 验证身份</li>
+        	<li> 设置新密码</li>
+        	<li class="four"> 完成 </li>
+        </ul>
+        <div class="xxbox">
+        	<div class="loginbox2">
+                <form id="form1" action="" method="post">
+                	<table>
+                    	<tr>
+                        	<td align="right">用户名：</td>
+                            <td><input type="text" name="email" id="email" value="{$_COOKIE['name']}"/></td>
+                        </tr>
+                       
+                         <tr>
+                        	<td align="right">验证码：</td>
+                            <td class="yzm"><input class="input" id="verify_code" name="verify_code" type="text" style="width:100px;" /> <img src="/system.php/Public/verify_code"  title="看不清？单击此处刷新" onclick="this.src+='?rand='+Math.random();"  style="cursor: pointer; vertical-align: middle;"/></td> 
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <!-- <td style="color:#e75d5f">错误提示信息……</td>  -->
+                        </tr>
+                         <input type="hidden" name="op_type" id="op_type" value="1"/>
+                         <tr>
+                         	<td></td>
+                        	<td class="dlan"><input type="button" class="btn findPwd" value="下一步"  /></td>
+                        </tr>
+                    </table>
+                    
+    </form>
+        </div>
+        </div>
+      </div>
+      <div class="cl"></div>
+      </div>
+      
+    </div>
+
+
+
+<!--    <div class="loginBox">
+        <div class="innerBox">
+            <div class="logo"> <img src="../Public/Img/logo.png" /></div>
+            <form id="form1" action="" method="post">
+                <h1  style="text-align: center;margin-top: 30px; margin-bottom: 20px;color: #214FA3">用户登录</h1>
+                <div class="loginInfo">
+                    <ul>
+                        <li class="row1">账号：</li>
+                        <li class="row2"><input class="input" name="email" id="email" style="width: 200px;"  type="text"  value="{$_COOKIE['name']}"/></li>
+                    </ul>
+                   
+                    <ul>
+                        <li class="row1">验证码：</li>
+                        <li class="row2"><input class="input" id="verify_code" name="verify_code" type="text" style="width:100px;" /> <img src="/system.php/Public/verify_code"  title="看不清？单击此处刷新" onclick="this.src+='?rand='+Math.random();"  style="cursor: pointer; vertical-align: middle;"/></li>
+                    </ul>
+                  
+                </div>
+                <input type="hidden" name="op_type" id="op_type" value="1"/>
+            </form>
+            <div class="clear"></div>
+            <div class="operation"><button class="btn findPwd">下一步</button>   
+        </div>
+    </div>-->
+<include file="Common:minfooter" />
+    <script type="text/javascript">
+        $(function(){
+            $(".findPwd").click(function(){
+                $("#op_type").val("2");
+                if($("#email").val()==''){
+                    popup.alert("填写了你的邮箱/用户名/手机方可找回密码");
+                    return false;
+                }
+                if($("#verify_code").val()==''){
+                    popup.alert("请写验证码方可找回密码");
+                    return false;
+                }
+                commonAjaxSubmit();
+            });
+        });
+    </script>
