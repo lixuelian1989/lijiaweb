@@ -1,3 +1,0 @@
-./alidata/server/php-5.4.27/bin/phpize
-./alidata/server/php-5.4.27/bin/phpize
-/alidata/server/php/include/php/
